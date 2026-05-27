@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
+
+*,body {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+main{
+    flex:1;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.detail-content::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3b82f6; /* สีน้ำเงินของ Tailwind */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+}
