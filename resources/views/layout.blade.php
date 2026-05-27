@@ -84,8 +84,9 @@
             </div>
             <div>
                 <h3 class="text-white font-bold mb-3">ที่อยู่บริษัท</h3>
-                <p class="text-gray-500 leading-relaxed">2884/71-72 หอพัฒนากลการแล็บ แขวงบางคอแหลม เขตบางคอแหลม
-                    กรุงเทพมหานคร 10120<br><i class="fa-solid fa-phone mt-2 mr-1"></i> 02-123-4567</p>
+                <p class="text-gray-500 leading-relaxed">48/7 ม.3 ถนนเด็จ ต.มีชัย อ.เมือง จ.หนองคาย 43000
+                <br><i class="fa-solid fa-phone mt-2 mr-1"></i> 02-123-4567</p>
+                <i class="fa-solid fa-envelope mr-1"></i> info@digixtechsolution.com</p>
             </div>
         </div>
         <div
