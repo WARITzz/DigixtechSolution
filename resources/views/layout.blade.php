@@ -8,6 +8,8 @@
     @vite(['resources/css/layout.css', 'resources/js/tailwind-config.js'])
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="wrapper">
@@ -98,5 +100,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 80,
+    });
+</script>
 </body>
 </html>

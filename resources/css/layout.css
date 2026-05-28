@@ -90,3 +90,53 @@ body::-webkit-scrollbar-thumb:hover {
 .animate-fade-in {
     animation: fadeIn 0.5s ease-in forwards;
 }
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+ /* floating animation */
+    @keyframes float {
+        0%,100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .animate-float {
+        animation: float 4s ease-in-out infinite;
+    }
+
+    /* glow button */
+    .btn-glow:hover {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+        transform: translateY(-2px);
+    }
+
+    /* smooth hover card */
+    .card-hover {
+        transition: all .35s ease;
+    }
+
+    .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,.12);
+    }
+
+    /* animated background */
+    @keyframes pulseBg {
+        0%,100% {
+            opacity: .15;
+            transform: scale(1);
+        }
+        50% {
+            opacity: .25;
+            transform: scale(1.05);
+        }
+    }
+
+    .hero-bg {
+        animation: pulseBg 10s ease-in-out infinite;
+    }
