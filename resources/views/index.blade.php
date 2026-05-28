@@ -11,7 +11,7 @@
             <p class="text-gray-400 text-sm sm:text-base mb-8 max-w-2xl mx-auto">เราคือผู้นำเข้าและจัดจำหน่ายอุปกรณ์ไอที
                 อุปกรณ์เครือข่าย และเซิร์ฟเวอร์ สำหรับองค์กร มั่นใจด้วยมาตรฐานระดับสากล</p>
             <div class="flex justify-center space-x-4">
-                <a href="#"
+                <a href="{{ route('catalog') }}"
                     class="bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-2.5 rounded-md transition">ดูแคตตาล็อกสินค้า</a>
                 {{-- <button class="border border-white hover:bg-white/10 text-white font-medium px-6 py-2.5 rounded-md transition">เรียนรู้เพิ่มเติม</button> --}}
             </div>
