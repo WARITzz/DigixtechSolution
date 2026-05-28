@@ -5,9 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title')</title>
-    @vite(['resources/css/layout.css'])
+    @vite(['resources/css/layout.css', 'resources/js/tailwind-config.js'])
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="~/js/tailwind-config.js" asp-append-version="true"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -17,17 +16,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-8">
                 <div class="flex flex-col">
-                    <a href="#" class="text-xl font-bold text-slate-900 tracking-tight">Digix<span
+                    <a href="{{ route('home') }}" class="text-xl font-bold text-slate-900 tracking-tight">Digix<span
                             class="text-blue-600">Tech</span></a>
-                    <a href="#" class="text-xs font-bold text-danger-900 tracking-tight">TI<span
+                    <a href="{{ route('home') }}" class="text-xs font-bold text-danger-900 tracking-tight">TI<span
                             class="text-gray-600 ms-1">Solutions</span></a>
                 </div>
                 <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
-                    <a href="#" class="hover:text-blue-600 transition">หน้าแรก</a>
-                    <a href="#" class="hover:text-blue-600 transition">แคตตาล็อก</a>
-                    <a href="#" class="hover:text-blue-600 transition">ผลงาน</a>
-                    <a href="#" class="hover:text-blue-600 transition">เกี่ยวกับเรา</a>
-                    <a href="#" class="hover:text-blue-600 transition">ติดต่อเรา</a>
+                    <a href="{{ route('home') }}" class="hover:text-blue-600 transition">หน้าแรก</a>
+                    <a href="{{ route('catalog') }}" class="hover:text-blue-600 transition">แคตตาล็อก</a>
+                    <a href="{{ route('portfolio') }}" class="hover:text-blue-600 transition">ผลงาน</a>
+                    <a href="{{ route('about') }}" class="hover:text-blue-600 transition">เกี่ยวกับเรา</a>
+                    <a href="{{ route('contact') }}" class="hover:text-blue-600 transition">ติดต่อเรา</a>
                 </nav>
             </div>
             <div class="flex items-center space-x-4">
@@ -69,22 +68,22 @@
             <div>
                 <h3 class="text-white font-bold mb-3">ผังไซต์</h3>
                 <ul class="space-y-2">
-                    <li><a asp-action="index" asp-controller="Home" class="hover:text-white">หน้าแรก</a></li>
-                    <li><a asp-action="index" asp-controller="Catalog" class="hover:text-white">รายการสินค้า</a></li>
-                    <li><a href="#" class="hover:text-white">บริการของเรา</a></li>
+                    <li><a href="{{ route('home') }}" class="hover:text-white">หน้าแรก</a></li>
+                    <li><a href="{{ route('catalog') }}" class="hover:text-white">รายการสินค้า</a></li>
+                    <li><a href="{{ route('services') }}" class="hover:text-white">บริการของเรา</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-white font-bold mb-3">บริการลูกค้า</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-white">ติดต่อฝ่ายสนับสนุน</a></li>
-                    <li><a href="#" class="hover:text-white">นโยบายการรับประกันสินค้า</a></li>
-                    <li><a href="#" class="hover:text-white">การจัดส่งสินค้า</a></li>
+                    <li><a href="{{ route('contact') }}" class="hover:text-white">ติดต่อฝ่ายสนับสนุน</a></li>
+                    <li><a href="{{ route('warranty') }}" class="hover:text-white">นโยบายการรับประกันสินค้า</a></li>
+                    <li><a href="{{ route('shipping') }}" class="hover:text-white">การจัดส่งสินค้า</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-white font-bold mb-3">ที่อยู่บริษัท</h3>
-                <p class="text-gray-500 leading-relaxed">48/7 ม.3 ถนนเด็จ ต.มีชัย อ.เมือง จ.หนองคาย 43000
+                <p class="text-gray-500 leading-relaxed">48/7 ม.3 ถนนเสด็จ ต.มีชัย อ.เมือง จ.หนองคาย 43000
                 <br><i class="fa-solid fa-phone mt-2 mr-1"></i> 02-123-4567</p>
                 <i class="fa-solid fa-envelope mr-1"></i> info@digixtechsolution.com</p>
             </div>
@@ -94,11 +93,10 @@
             <p>© 2026 Digix<span class="text-blue-600 ms-1">Tech</span> All rights reserved. Professional B2B
                 Electronics Wholesale.</p>
             <div class="flex space-x-4 mt-2 sm:mt-0">
-                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                <a href="{{ route('privacy') }}" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="{{ route('terms') }}" class="hover:text-gray-400">Terms of Service</a>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

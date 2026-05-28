@@ -8,7 +8,10 @@ export default defineConfig({
             input: [
                 'resources/css/app.css', 
                 'resources/css/layout.css', 
-                'resources/js/app.js'],
+                'resources/js/app.js',
+                'resources/js/tailwind-config.js',
+                'resources/js/catalog.js',
+            ],
             refresh: true,
         }),
         tailwindcss(),
