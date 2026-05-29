@@ -37,10 +37,24 @@
                 </nav>
             </div>
             <div class="flex items-center space-x-4">
+                <button id="mobile-menu-button" aria-controls="mobile-nav" aria-expanded="false"
+                    class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <button
                     class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">ใบเสนอราคา</button>
             </div>
         </div>
+        <nav id="mobile-nav" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-2">
+                <a href="{{ route('home') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">หน้าแรก</a>
+                <a href="{{ route('catalog') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">แคตตาล็อก</a>
+                <a href="{{ route('services') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">บริการของเรา</a>
+                <a href="{{ route('portfolio') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">ผลงาน</a>
+                <a href="{{ route('about') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">เกี่ยวกับเรา</a>
+                <a href="{{ route('contact') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">ติดต่อเรา</a>
+            </div>
+        </nav>
     </header>
 
 
@@ -107,6 +121,16 @@
         once: true,
         offset: 80,
     });
+
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (mobileMenuButton && mobileNav) {
+        mobileMenuButton.addEventListener('click', () => {
+            const isOpen = !mobileNav.classList.contains('hidden');
+            mobileNav.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+        });
+    }
 </script>
 </body>
 </html>
