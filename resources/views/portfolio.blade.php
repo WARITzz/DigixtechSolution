@@ -12,7 +12,7 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- ระบบจัดการเครือข่ายองค์กรขนาดใหญ่ -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="150" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600&h=400&fit=crop"
                     alt="ระบบจัดการเครือข่ายองค์กรขนาดใหญ่" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-semibold mt-4">ระบบเครือข่าย</span>
@@ -22,7 +22,7 @@
             </div>
 
             <!-- ระบบผลิตอัจฉริยะ -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="200" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&h=400&fit=crop"
                     alt="ระบบผลิตอัจฉริยะ" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-semibold mt-4">IoT & AI</span>
@@ -32,7 +32,7 @@
             </div>
 
             <!-- แพลตฟอร์ม CRM -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="250" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=600&h=400&fit=crop"
                     alt="แพลตฟอร์ม CRM" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-semibold mt-4">ระบบบริหาร</span>
@@ -42,7 +42,7 @@
             </div>
 
             <!-- ระบบความปลอดภัยไซเบอร์ -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="300" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=600&h=400&fit=crop"
                     alt="ระบบความปลอดภัยไซเบอร์" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-error text-on-error px-3 py-1 rounded-full text-xs font-semibold mt-4">ความปลอดภัย</span>
@@ -52,7 +52,7 @@
             </div>
 
             <!-- การย้ายระบบไปยังคลาวด์ -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="350" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&h=400&fit=crop"
                     alt="การย้ายระบบไปยังคลาวด์" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-success text-on-success px-3 py-1 rounded-full text-xs font-semibold mt-4">คลาวด์</span>
@@ -62,7 +62,7 @@
             </div>
 
             <!-- ระบบ ERP บัญชีการเงิน -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="400" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1551731423-8ac59e3f3ffa?q=80&w=600&h=400&fit=crop"
                     alt="ระบบ ERP บัญชีการเงิน" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-semibold mt-4">ERP</span>
@@ -72,7 +72,7 @@
             </div>
 
             <!-- แอปพลิเคชันโทรศัพท์มือถือ HR -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="450" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1512941691920-ab7fbf46eece?q=80&w=600&h=400&fit=crop"
                     alt="แอปพลิเคชันจัดการพนักงาน" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-semibold mt-4">Mobile</span>
@@ -82,7 +82,7 @@
             </div>
 
             <!-- แพลตฟอร์มอีคอมเมิร์ซ -->
-            <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+            <div data-aos="zoom-in" data-aos-delay="500" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
                 <img src="https://images.unsplash.com/photo-1523475335684-37898b6baf30?q=80&w=600&h=400&fit=crop"
                     alt="แพลตฟอร์มอีคอมเมิร์ซ" class="w-full h-48 rounded-lg object-cover">
                 <span class="inline-block bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-semibold mt-4">Ecommerce</span>
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Details -->
-        <div id="portfolio-details" class="mt-16 space-y-12">
+        <div id="portfolio-details" class="mt-16 space-y-12" hidden>
             <article id="detail-network" class="bg-surface p-8 rounded-2xl border border-outline">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=900&h=600&fit=crop" alt="ระบบจัดการเครือข่าย" class="w-full rounded-lg lg:col-span-1 object-cover">

@@ -7,25 +7,67 @@
                 เกี่ยวกับเรา
             </h2>
             <p class="text-body-md text-on-surface-variant">
-                DigixTech คือผู้นำเข้าและจัดจำหน่ายสินค้าอิเล็กทรอนิกส์ราคาส่งระดับมืออาชีพ เรามุ่งมั่นที่จะนำเสนอสินค้าคุณภาพสูงในราคาที่แข่งขันได้ พร้อมบริการที่เป็นเลิศเพื่อความพึงพอใจสูงสุดของลูกค้า
+                บริการออกแบบและพัฒนา Software & Hardware Solution แบบครบวงจร รับออกแบบและพัฒนาตามความต้องการ ใส่ใจทุกขั้นตอน บริการด้วยใจ โดยผู้มีประสบการณ์
             </p>
         </div>
         <div class="flex flex-col md:flex-row gap-gutter">
-            <div class="w-full md:w-1/2 bg-on-primary-fixed p-10 rounded-2xl text-white space-y-8">
-                <h3 class="text-headline-md font-bold">พันธกิจของเรา</h3>
-                <p class="text-primary-fixed-dim">
-                    เรามุ่งมั่นที่จะเป็นพันธมิตรที่เชื่อถือได้สำหรับธุรกิจต่างๆ โดยการนำเสนอสินค้าที่มีคุณภาพสูงในราคาที่เหมาะสม พร้อมบริการที่รวดเร็วและเป็นมืออาชีพ เพื่อช่วยให้ลูกค้าของเราประสบความสำเร็จในธุรกิจของพวกเขา
-                </p>
-                <h3 class="text-headline-md font-bold">วิสัยทัศน์ของเรา</h3>
-                <p class="text-primary-fixed-dim">
-                    เราตั้งเป้าที่จะเป็นผู้นำในตลาดสินค้าอิเล็กทรอนิกส์ราคาส่ง ด้วยการขยายเครือข่ายการจัดจำหน่ายและเพิ่มความหลากหลายของสินค้า เพื่อให้ลูกค้าของเราสามารถเข้าถึงสินค้าที่ดีที่สุดได้อย่างง่ายดายและรวดเร็ว
-                </p>
+            <div data-aos="fade-up" data-aos-delay="150" class="w-full md:w-1/2 bg-gradient-to-br from-slate-900 to-slate-800 p-10 rounded-2xl text-white space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-amber-400">วิสัยทัศน์ของเรา</h3>
+                    <p class="text-gray-300 leading-relaxed border-l-4 border-amber-500 pl-4">
+                        มุ่งมั่นเป็นผู้นำด้านโซลูชันดิจิทัลครบวงจรในประเทศ ผสานระบบโลจิสติกส์ ความปลอดภัย ระบบองค์กร และโครงสร้างพื้นฐานคลาวด์ตามมาตรฐานสากล
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-amber-400">พันธกิจของเรา</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center mt-0.5">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-200">ส่งมอบโซลูชัน IT คุณภาพสูงและนวัตกรรมล้ำสมัย</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center mt-0.5">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-200">สนับสนุนการเปลี่ยนผ่านสู่ดิจิทัลขององค์กรลูกค้า</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center mt-0.5">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-200">พัฒนาบุคลากรทุกระดับอย่างต่อเนื่อง</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center mt-0.5">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-200">ส่งเสริมการใช้เทคโนโลยีอย่างรับผิดชอบต่อสิ่งแวดล้อมและสังคม เพื่อการเติบโตอย่างยั่งยืนร่วมกัน</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="w-full md:w-1/2 bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant shadow-sm">
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDldDjvyvsLF07n81mjw69Ooj0rDFRUuWaWwf88JFif14NP07ROuaOkMp_g8aqi-r9VT4T6gPwwjj-_Y6RscPGkty0hikONOXbJKOdE6Iez902aADVenY_br5t97lUwDFZzvb1ZvYHQAweP_bt8hdtwi2vIrkjI9eiVQD8afqIlx_RKgpEl6mBy-oczCKD4x5Q2wUiU4jvxriGEcvlNj4cuepdgY5hPyQCR43P3botyig9wD6YSl7rJ0z08GVMoK0knJ3lM3hDyQZ9J"
-                    alt="ภาพเกี่ยวกับเรา" class="w-full h-auto rounded-lg object-cover">
-                {{-- <button
-                    class="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-800 text-xs font-semibold px-3 py-1 rounded-lg transition">ดูรายละเอียด</button> --}}
+            <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/2 bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant shadow-sm">
+                <h3 class="text-2xl font-bold mb-4 text-slate-900">Why Digix Tech</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    ทีมผู้เชี่ยวชาญของเรารวมทั้งวิศวกรฮาร์ดแวร์และนักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ มุ่งมั่นสร้างโซลูชันที่ตอบโจทย์ความต้องการของลูกค้าในทุกระดับธุรกิจ
+                </p>
+                <ul class="space-y-4 text-slate-600">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ออกแบบระบบโดยคำนึงถึงการใช้งานจริงและการเติบโตในอนาคต</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span>
+                        <span>พัฒนาต่อยอดด้วยเทคโนโลยี AI, IoT และ Cloud อย่างครบวงจร</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ดูแลตั้งแต่การติดตั้ง จนถึงการบำรุงรักษาหลังส่งมอบ</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

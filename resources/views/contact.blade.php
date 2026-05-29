@@ -12,38 +12,44 @@
         </div>
         <div class="flex flex-col md:flex-row gap-gutter">
             <!-- Info Column -->
-            <div class="w-full md:w-1/3 bg-on-primary-fixed p-10 rounded-2xl text-white space-y-8">
+            <div class="w-full md:w-2/5 bg-on-primary-fixed p-10 rounded-2xl text-white space-y-8">
                 <h3 class="text-headline-md font-bold">ข้อมูลติดต่อ</h3>
                 <div class="space-y-6">
                     <div class="flex items-start gap-4">
-                        <span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+                        <i class="fa-solid fa-map-location-dot text-secondary-fixed text-lg"></i>
                         <p class="text-primary-fixed-dim">
-                            เลขที่ 123/456 ชั้น 20 อาคารเอ็มไพร์ ทาวเวอร์ ถนนสาทรใต้
-                            แขวงยานนาวา เขตสาทร กรุงเทพฯ 10120
+                            148/7 ม.3 ถนนเสด็จ ต.มีชัย อ.เมือง<br>จ.หนองคาย 43000
                         </p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-secondary-fixed">call</span>
-                        <p class="text-primary-fixed-dim">02-123-4567, 081-999-8888</p>
+                        <i class="fa-solid fa-phone text-secondary-fixed text-lg"></i>
+                        <p class="text-primary-fixed-dim">02-123-4567</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-secondary-fixed">mail</span>
+                        <i class="fa-solid fa-envelope text-secondary-fixed text-lg"></i>
                         <p class="text-primary-fixed-dim">
-                            contact@digixtech.com
+                            info@digixtechsolution.com
                         </p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-secondary-fixed">schedule</span>
+                        <i class="fa-solid fa-clock text-secondary-fixed text-lg"></i>
                         <p class="text-primary-fixed-dim">
                             จันทร์ - ศุกร์: 09.00 - 18.00 น.
                         </p>
                     </div>
                 </div>
                 <div
-                    class="rounded-xl overflow-hidden h-48 mt-8 border border-white/10 grayscale hover:grayscale-0 transition-all duration-500">
-                    <img class="w-full h-full object-cover" data-location="Bangkok"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDldDjvyvsLF07n81mjw69Ooj0rDFRUuWaWwf88JFif14NP07ROuaOkMp_g8aqi-r9VT4T6gPwwjj-_Y6RscPGkty0hikONOXbJKOdE6Iez902aADVenY_br5t97lUwDFZzvb1ZvYHQAweP_bt8hdtwi2vIrkjI9eiVQD8afqIlx_RKgpEl6mBy-oczCKD4x5Q2wUiU4jvxriGEcvlNj4cuepdgY5hPyQCR43P3botyig9wD6YSl7rJ0z08GVMoK0knJ3lM3hDyQZ9J" />
+                    class="rounded-xl overflow-hidden h-64 mt-8 border border-white/10 hover:shadow-lg transition-all duration-500">
+                    <iframe class="w-full h-full" src="https://maps.google.com/maps?q=17.869405578393813,102.72921595465375&z=17&output=embed"
+                        allowfullscreen="" loading="lazy" scrolling="yes" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <p class="mt-3 text-xs text-white/80">ตำแหน่งบริษัท Digix Tech</p>
+                <p class="mt-2">
+                    <a href="https://www.google.com/maps/search/?api=1&query=17.869405578393813,102.72921595465375"
+                        target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">
+                        เปิดใน Google Maps
+                    </a>
+                </p>
             </div>
             <!-- Form Column -->
             <div
@@ -85,7 +91,7 @@
                     </div>
                     <div class="md:col-span-2 pt-4">
                         <button
-                            class="w-full bg-error text-on-error py-4 rounded-lg font-bold hover:bg-opacity-90 active:scale-95 transition-all"
+                            class="w-full bg-amber-500 hover:bg-amber-600 text-white py-4 rounded-lg font-bold active:scale-95 transition-all"
                             type="submit">
                             ส่งข้อความถึงเรา
                         </button>

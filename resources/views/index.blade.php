@@ -3,52 +3,110 @@
 @section('content')
     <section class="relative bg-slate-900 text-white py-24 px-4 overflow-hidden">
         <div
-            class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&amp;w=2000')] bg-cover bg-center">
+            class="absolute inset-0 opacity-40 bg-[url('/images/digix-tech-logo.png')] bg-cover bg-center">
         </div>
          <!-- dark overlay -->
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative max-w-4xl mx-auto text-center z-10">
+            <div data-aos="fade-down" class="mb-6">
+                {{-- <img src="/images/digix-tech-logo.png" alt="Digix Tech" class="h-16 mx-auto mb-4" style="filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.5));"> --}}
+            </div>
             <h1  data-aos="fade-up" class="text-3xl sm:text-5xl font-bold mb-4 leading-tight">
-                ยกระดับธุรกิจของคุณด้วยนวัตกรรม<br>อิเล็กทรอนิกส์ระดับโลก</h1>
-            <p  data-aos="fade-up" data-aos-delay="150" class="text-gray-400 text-sm sm:text-base mb-8 max-w-2xl mx-auto">เราคือผู้นำเข้าและจัดจำหน่ายอุปกรณ์ไอที
-                อุปกรณ์เครือข่าย และเซิร์ฟเวอร์ สำหรับองค์กร มั่นใจด้วยมาตรฐานระดับสากล</p>
+                ออกแบบและพัฒนาโซลูชัน IT ครบวงจร<br>ทั้ง Hardware, Software และ AI</h1>
+            <p  data-aos="fade-up" data-aos-delay="150" class="text-gray-400 text-sm sm:text-base mb-8 max-w-2xl mx-auto">เราช่วยธุรกิจ SME บริษัท ร้านค้าออนไลน์ และโปรเจกต์ AI สร้างระบบที่ตอบโจทย์จริง พร้อมบริการด้วยใจ
+                ให้คำปรึกษาและประเมินราคาฟรี</p>
             <div data-aos="zoom-in" data-aos-delay="300" class="flex justify-center space-x-4">
                 <a href="{{ route('catalog') }}"
-                    class="bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-2.5 rounded-md transition">ดูแคตตาล็อกสินค้า</a>
-                {{-- <button class="border border-white hover:bg-white/10 text-white font-medium px-6 py-2.5 rounded-md transition">เรียนรู้เพิ่มเติม</button> --}}
+                    class="bg-amber-500 hover:bg-amber-600 text-white font-medium px-6 py-2.5 rounded-md transition">ดูแคตตาล็อกสินค้า</a>
+                <a href="{{ route('contact') }}"
+                    class="border border-amber-400 hover:bg-amber-500/20 text-white font-medium px-6 py-2.5 rounded-md transition">ติดต่อขอคำปรึกษาฟรี</a>
             </div>
         </div>
     </section>
     <section class="max-w-7xl mx-auto px-4 py-16">
-        <h2 class="text-center text-xl font-bold text-gray-900 mb-2">บริการครบวงจรด้านเทคโนโลยี</h2>
-        <p class="text-center text-gray-500 text-xs mb-10">ในฐานะพันธมิตรที่ไว้วางใจได้ เราพร้อมช่วยเหลือคุณในทุกขั้นตอน</p>
+        <h2 class="text-center text-xl font-bold text-gray-900 mb-2">บริการโซลูชันไอทีครบวงจร สำหรับธุรกิจทุกขนาด</h2>
+        <p class="text-center text-gray-500 text-xs mb-10">เราให้บริการตั้งแต่การวางแผน จัดหา ติดตั้ง จนถึงดูแลหลังการใช้งาน เพื่อให้ระบบของคุณใช้งานได้จริงและเติบโตได้อย่างมั่นคง</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div data-aos="zoom-in" data-aos-delay="700" class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start space-x-4 card-hover">
-                <div class="p-3 bg-red-50 text-red-500 rounded-lg"><i class="fa-solid fa-earth-americas text-xl"></i></div>
+                <div class="p-3 bg-amber-50 text-amber-600 rounded-lg"><i class="fa-solid fa-earth-americas text-xl"></i></div>
                 <div>
-                    <h3 class="font-bold mb-1 text-sm">Global Sourcing</h3>
-                    <p class="text-xs text-gray-500">จัดหาอุปกรณ์อิเล็กทรอนิกส์จากทั่วทุกมุมโลก</p>
+                    <h3 class="font-bold mb-1 text-sm">จัดหาอุปกรณ์มาตรฐาน</h3>
+                    <p class="text-xs text-gray-500">จัดหาอุปกรณ์ IT, IoT และเครือข่ายจากแบรนด์ชั้นนำ พร้อมการรองรับการใช้งานระยะยาว</p>
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-delay="700" class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start space-x-4 card-hover">
                 <div class="p-3 bg-blue-50 text-blue-500 rounded-lg"><i class="fa-solid fa-tags text-xl"></i></div>
                 <div>
-                    <h3 class="font-bold mb-1 text-sm">Wholesale Pricing</h3>
-                    <p class="text-xs text-gray-500">ราคาส่งตรงจากโรงงานสำหรับสั่งซื้อจำนวนมาก</p>
+                    <h3 class="font-bold mb-1 text-sm">ราคาเหมาะสมและโปร่งใส</h3>
+                    <p class="text-xs text-gray-500">เสนอราคาอย่างตรงไปตรงมา พร้อมคำแนะนำเพื่อให้คุณได้โซลูชันที่คุ้มค่าที่สุด</p>
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-delay="700" class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start space-x-4 card-hover">
                 <div class="p-3 bg-cyan-50 text-cyan-500 rounded-lg"><i class="fa-solid fa-check text-xl"></i></div>
                 <div>
-                    <h3 class="font-bold mb-1 text-sm">Quality Assurance</h3>
-                    <p class="text-xs text-gray-500">ตรวจสอบคุณภาพ (QC) ทุกชิ้นส่วนก่อนส่งมอบ</p>
+                    <h3 class="font-bold mb-1 text-sm">การันตีคุณภาพงาน</h3>
+                    <p class="text-xs text-gray-500">ทุกโปรเจกต์ผ่านกระบวนการตรวจสอบและทดสอบอย่างละเอียดก่อนส่งมอบ</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-slate-900 text-white py-16 px-4">
+    <section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white max-w-7xl mx-auto px-4 py-16 rounded-xl">
+        <h2 class="text-center text-xl font-bold mb-4">บริการออกแบบและพัฒนา Software & Hardware Solution แบบครบวงจร</h2>
+        <p class="text-center text-sm mb-6">รับออกแบบและพัฒนาตามความต้องการ ใส่ใจทุกขั้นตอน บริการด้วยใจโดยผู้มีประสบการณ์ พร้อมให้คำปรึกษาและประเมินราคาฟรี</p>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-sm">
+            <div>
+                <ul class="space-y-2">
+                    <li>• ธุรกิจ SME</li>
+                    <li>• บริษัท</li>
+                    <li>• ร้านค้าออนไลน์</li>
+                    <li>• AI นับสินค้าในโรงงานอุตสาหกรรม</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="space-y-2">
+                    <li>• AI อ่านป้ายทะเบียนรถ</li>
+                    <li>• บุคคลทั่วไปที่มีไอเดียโปรเจกต์ที่สนใจ</li>
+                    <li>• ERP</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">บริการของเรา</h3>
+            <p class="text-xs text-gray-500">โซลูชันครบวงจรทั้งฮาร์ดแวร์ ซอฟต์แวร์ และคลาวด์สำหรับธุรกิจยุคดิจิทัล</p>
+            <a href="{{ route('contact') }}" class="inline-block mt-4 bg-amber-500 hover:bg-amber-600 text-white font-medium px-6 py-3 rounded-md transition">ติดต่อขอคำปรึกษาฟรี</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div data-aos="zoom-in" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">Hardware Layer (IoT Devices)</h3>
+                <p class="text-gray-600 leading-relaxed text-sm">อุปกรณ์ IoT ที่เชื่อมต่อได้ดี รองรับการใช้งานจริงและเก็บข้อมูลได้แม่นยำสำหรับระบบอัจฉริยะ</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="150" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">Software Layer (Soudaphone Platform)</h3>
+                <p class="text-gray-600 leading-relaxed text-sm">แพลตฟอร์มซอฟต์แวร์ที่ออกแบบมาเพื่อบริหารจัดการข้อมูลและกระบวนการทำงานอย่างครบวงจร</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">Analytics & AI Layer</h3>
+                <p class="text-gray-600 leading-relaxed text-sm">วิเคราะห์ข้อมูลเชิงลึกด้วย AI เพื่อช่วยให้คุณตัดสินใจได้เร็วขึ้นและแม่นยำขึ้น</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="450" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">Software Development Services</h3>
+                <p class="text-gray-600 leading-relaxed text-sm">พัฒนาซอฟต์แวร์เฉพาะทางทั้งระบบ เขียนโปรแกรมตามสเปค พร้อมทดสอบและดูแลหลังส่งมอบ</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="600" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">Cloud, IT & Data Center Service</h3>
+                <p class="text-gray-600 leading-relaxed text-sm">บริการคลาวด์และศูนย์ข้อมูลที่ปลอดภัย ปรับขนาดได้ และรองรับการใช้งานระดับองค์กร</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="750" class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">Consulting & Support</h3>
+                <p class="text-gray-600 leading-relaxed text-sm">ให้คำปรึกษาเชิงเทคนิคและธุรกิจ พร้อมติดตั้งและดูแลระบบอย่างมืออาชีพ</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-br from-slate-50 to-gray-100 py-16 px-4">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-lg font-bold mb-8">โซลูชันที่เราเชี่ยวชาญ</h2>
+            <h2 class="text-lg font-bold mb-8 text-gray-900">โซลูชันที่เราเชี่ยวชาญ</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <!-- Card 1: Modern Infrastructure -->
