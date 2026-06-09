@@ -112,25 +112,97 @@
         </div>
     </footer>
 
+    <div id="cookie-banner" class="hidden fixed inset-x-3 bottom-4 z-50 rounded-3xl border border-amber-400/50 bg-amber-500/95 p-4 shadow-[0_32px_80px_-40px_rgba(251,191,36,0.9)] text-slate-950 max-w-4xl mx-auto sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 sm:w-[calc(100%-2rem)] lg:w-[720px]">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex gap-3">
+                <span class="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-amber-300 text-lg">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </span>
+                <div class="space-y-1 text-sm leading-6 font-semibold">
+                    <p class="text-slate-950">เว็บไซต์นี้ใช้คุกกี้เพื่อปรับปรุงการใช้งานของคุณ</p>
+                    <p class="text-slate-950/80 text-xs sm:text-sm">การใช้งานต่อถือว่ายอมรับนโยบายคุกกี้ของเรา</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
+                <button id="cookie-accept" class="inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-amber-300 transition duration-150 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-800">
+                    ยอมรับคุกกี้
+                </button>
+                <button id="cookie-close" class="inline-flex items-center justify-center rounded-full border border-slate-950 bg-white/10 px-5 py-2.5 text-sm font-semibold text-slate-950 transition duration-150 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-slate-950">
+                    ปิด
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 80,
-    });
-
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileNav = document.getElementById('mobile-nav');
-    if (mobileMenuButton && mobileNav) {
-        mobileMenuButton.addEventListener('click', () => {
-            const isOpen = !mobileNav.classList.contains('hidden');
-            mobileNav.classList.toggle('hidden');
-            mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
-        });
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
     }
+
+    function getCookie(name) {
+        const nameEQ = `${name}=`;
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let c = cookies[i].trim();
+            if (c.indexOf(nameEQ) === 0) {
+                return decodeURIComponent(c.substring(nameEQ.length));
+            }
+        }
+        return null;
+    }
+
+    function hideCookieBanner() {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) {
+            banner.classList.add('hidden');
+        }
+    }
+
+    function acceptCookies() {
+        setCookie('digixtech_cookie_consent', 'accepted', 365);
+        hideCookieBanner();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 80,
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+        if (mobileMenuButton && mobileNav) {
+            mobileMenuButton.addEventListener('click', () => {
+                const isOpen = !mobileNav.classList.contains('hidden');
+                mobileNav.classList.toggle('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+            });
+        }
+
+        const cookieBanner = document.getElementById('cookie-banner');
+        const cookieAccept = document.getElementById('cookie-accept');
+        const cookieClose = document.getElementById('cookie-close');
+
+        if (getCookie('digixtech_cookie_consent') !== 'accepted') {
+            if (cookieBanner) {
+                cookieBanner.classList.remove('hidden');
+            }
+        }
+
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', acceptCookies);
+        }
+
+        if (cookieClose) {
+            cookieClose.addEventListener('click', acceptCookies);
+        }
+    });
 </script>
 </body>
 </html>
