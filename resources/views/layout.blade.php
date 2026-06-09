@@ -141,7 +141,18 @@
     function setCookie(name, value, days) {
         const expires = new Date();
         expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
-        document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
+        const cookieValue = `${name}=${encodeURIComponent(value)};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
+        try {
+            document.cookie = cookieValue;
+        } catch (e) {
+            // Cookie write blocked by browser/privacy mode
+        }
+
+        try {
+            localStorage.setItem(name, value);
+        } catch (e) {
+            // localStorage unavailable in some privacy modes
+        }
     }
 
     function getCookie(name) {
@@ -153,7 +164,12 @@
                 return decodeURIComponent(c.substring(nameEQ.length));
             }
         }
-        return null;
+
+        try {
+            return localStorage.getItem(name);
+        } catch (e) {
+            return null;
+        }
     }
 
     function hideCookieBanner() {
