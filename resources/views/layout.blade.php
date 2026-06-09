@@ -216,7 +216,7 @@
         }
 
         if (cookieClose) {
-            cookieClose.addEventListener('click', acceptCookies);
+            cookieClose.addEventListener('click', hideCookieBanner);
         }
     });
 </script>
