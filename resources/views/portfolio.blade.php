@@ -19,7 +19,7 @@
             </div>
             <div class="portfolio-grid portfolio-grid--four">
                 <article class="portfolio-card">
-                    <div class="portfolio-card__visual"><img src="/images/services/barrier.svg" alt="Barrier System"></div>
+                    <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Barrier.jpg" alt="Barrier System"></div>
                     <div class="portfolio-card__body"><span>Access Control</span>
                         <h3>Barrier</h3>
                         <p>ระบบไม้กั้นอัตโนมัติ รองรับ RFID, Plate Recognition
@@ -27,21 +27,21 @@
                     </div>
                 </article>
                 <article class="portfolio-card">
-                    <div class="portfolio-card__visual"><img src="/images/services/alpr.svg" alt="ALPR System"></div>
+                    <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Balpr.jpg" alt="ALPR System"></div>
                     <div class="portfolio-card__body"><span>Vehicle Intelligence</span>
                         <h3>ALPR Systems</h3>
                         <p>อ่านป้ายทะเบียนอัตโนมัติ ติดตามรถแบบ Real-time และรองรับงานด่าน การจราจร และระบบ Toll</p>
                     </div>
                 </article>
                 <article class="portfolio-card">
-                    <div class="portfolio-card__visual"><img src="/images/services/cctv.svg" alt="CCTV Surveillance"></div>
+                    <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Bcctv.jpg" alt="CCTV Surveillance"></div>
                     <div class="portfolio-card__body"><span>Video Security</span>
                         <h3>CCTV &amp; Surveillance</h3>
                         <p>ระบบกล้องความคมชัดสูง Night Vision, Remote Monitoring และ Recording เพื่อความปลอดภัยรอบด้าน</p>
                     </div>
                 </article>
                 <article class="portfolio-card">
-                    <div class="portfolio-card__visual"><img src="/images/services/infrastructure.svg"
+                    <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Binfrastructure.jpg"
                             alt="IT Infrastructure"></div>
                     <div class="portfolio-card__body"><span>Managed IT</span>
                         <h3>IT Infrastructure</h3>
@@ -335,10 +335,10 @@
 
         .portfolio-card__visual {
             display: grid;
-            height: 11rem;
+            /* height: 11rem; */
             place-items: center;
             background: linear-gradient(135deg, #dbeafe, #eff6ff);
-            padding: 2.2rem;
+            /* padding: 1.2rem; */
         }
 
         .portfolio-card__visual img {

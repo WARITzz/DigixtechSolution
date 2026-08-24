@@ -76,24 +76,24 @@
                 </div>
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     <article class="integrated-card"><span class="integrated-number">01</span>
-                        <div class="integrated-image"><img src="/images/services/barrier.svg" alt="Barrier system"></div>
+                        <div class="integrated-image"><img src="/images/portfolio/Image_Barrier.jpg" alt="Barrier system"></div>
                         <h3>Barrier</h3>
                         <p>Automated Access Control<br>RFID &amp; Plate Recognition<br>Residential &amp; Commercial</p>
                     </article>
                     <article class="integrated-card"><span class="integrated-number">02</span>
-                        <div class="integrated-image"><img src="/images/services/alpr.svg" alt="ALPR system"></div>
+                        <div class="integrated-image"><img src="/images/portfolio/Image_Balpr.jpg" alt="ALPR system"></div>
                         <h3>ALPR Systems</h3>
                         <p>Automatic License Plate Recognition<br>Real-time Vehicle Tracking<br>Law Enforcement &amp; Tolls
                         </p>
                     </article>
                     <article class="integrated-card"><span class="integrated-number">03</span>
-                        <div class="integrated-image"><img src="/images/services/cctv.svg" alt="CCTV surveillance system">
+                        <div class="integrated-image"><img src="/images/portfolio/Image_Bcctv.jpg" alt="CCTV surveillance system">
                         </div>
                         <h3>CCTV &amp; Surveillance</h3>
                         <p>High-Definition Video<br>Night Vision and Remote Monitoring<br>Recording</p>
                     </article>
                     <article class="integrated-card"><span class="integrated-number">04</span>
-                        <div class="integrated-image"><img src="/images/services/infrastructure.svg"
+                        <div class="integrated-image"><img src="/images/portfolio/Image_Binfrastructure.jpg"
                                 alt="IT infrastructure"></div>
                         <h3>IT Infrastructure</h3>
                         <p>Managed IT Services<br>Network Design<br>Hardware &amp; Software Management</p>
@@ -109,38 +109,37 @@
                     <h2 class="mt-3 text-3xl font-black text-slate-900 sm:text-5xl">โซลูชันที่เชื่อมทุกส่วนของธุรกิจ</h2>
                 </div>
                 <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                    <article class="service-card"><img src="/images/services/development.svg"
-                            alt="Business-driven software development">
+                    <article class="service-card"><img src="/images/services/Image_development.jpg" alt="Software development services">
                         <h3>Business-Driven Software</h3>
                         <p>พัฒนา Software ตามกระบวนการทำงานจริงขององค์กร เชื่อมข้อมูลและเพิ่มประสิทธิภาพการปฏิบัติงาน</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/infrastructure.svg"
+                    <article class="service-card"><img src="/images/services/Image_infrastructure.jpg"
                             alt="Smart office infrastructure">
                         <h3>Smart Office Infrastructure</h3>
                         <p>วางระบบ Server, Network และโครงสร้างพื้นฐานที่พร้อมรองรับการเติบโตของธุรกิจ</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/datacenter.svg" alt="Data center services">
+                    <article class="service-card"><img src="/images/services/Image_datacenter.jpg" alt="Data center services">
                         <h3>Data Center Services</h3>
                         <p>ออกแบบ ติดตั้ง และดูแล Data Center พร้อมระบบสำรองและความต่อเนื่องทางธุรกิจ</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/cloud.svg"
+                    <article class="service-card"><img src="/images/services/Image_cloud.jpg"
                             alt="Cloud hosting for enterprise customers">
                         <h3>Cloud / Hosting</h3>
                         <p>บริการ Cloud และ Hosting สำหรับองค์กร ปรับขนาดได้ ปลอดภัย และพร้อมใช้งาน</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/software.svg" alt="Software platform">
+                    <article class="service-card"><img src="/images/services/Image_software.jpg" alt="Software platform">
                         <h3>Software Platform</h3>
                         <p>แพลตฟอร์มสำหรับจัดการข้อมูล เอกสาร Workflow และการทำงานภายในองค์กร</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/alpr.svg" alt="ALPR system">
+                    <article class="service-card"><img src="/images/services/Image_alpr.jpg" alt="ALPR system">
                         <h3>ALPR System</h3>
                         <p>ระบบอ่านป้ายทะเบียนอัตโนมัติสำหรับด่าน พื้นที่จอดรถ และการตรวจสอบยานพาหนะ</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/analytics.svg" alt="Analytics and AI">
+                    <article class="service-card"><img src="/images/services/Image_analytics.jpg" alt="Analytics and AI">
                         <h3>Analytics &amp; AI</h3>
                         <p>เปลี่ยนข้อมูลเป็น Insight เพื่อการตัดสินใจที่รวดเร็ว แม่นยำ และวัดผลได้</p>
                     </article>
-                    <article class="service-card"><img src="/images/services/network-topology.svg"
+                    <article class="service-card"><img src="/images/services/Image_network.jpg"
                             alt="Network topology design">
                         <h3>Network Design</h3>
                         <p>วิเคราะห์และออกแบบ LAN, WAN และ Wi-Fi ให้เหมาะกับพื้นที่และรูปแบบการใช้งาน</p>
@@ -257,7 +256,7 @@
             object-fit: contain;
             border-radius: .8rem;
             background: #f8fafc;
-            padding: .75rem;
+            /* padding: .75rem; */
         }
 
         .service-card h3 {
@@ -346,7 +345,7 @@
             height: 100%;
             width: 100%;
             object-fit: contain;
-            filter: brightness(0) invert(1);
+            /* filter: brightness(0) invert(1); */
         }
 
         .integrated-card h3 {

@@ -202,7 +202,7 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto max-w-6xl px-4 py-16">
+    {{-- <section class="mx-auto max-w-6xl px-4 py-16">
         <div class="mb-10">
             <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Investment &amp; Growth</p>
             <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">งบลงทุนและเป้าหมายรายได้</h2>
@@ -268,8 +268,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="bg-white px-4 py-16">
+    </section> --}}
+    {{-- <section class="bg-white px-4 py-16">
         <div class="mx-auto max-w-6xl">
             <div class="mb-10 text-center">
                 <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Implementation Roadmap 2026</p>
@@ -310,7 +310,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <section class="mx-auto max-w-6xl px-4 py-16">
         <div class="mb-10 text-center">
             <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Organization Structure</p>
