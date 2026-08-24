@@ -11,48 +11,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        .site-header {
+            border-bottom-color: rgba(148, 163, 184, .2);
+            background: linear-gradient(110deg, rgba(15, 23, 42, .88), rgba(30, 41, 59, .78));
+            box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+            transition: background .35s ease, box-shadow .35s ease, border-color .35s ease;
+        }
+
+        .site-header.is-scrolled {
+            border-bottom-color: rgba(180, 83, 9, .5);
+            background: linear-gradient(110deg, rgba(2, 6, 23, .97), rgba(30, 41, 59, .97));
+            box-shadow: 0 12px 32px rgba(15, 23, 42, .3);
+        }
+
+        .header-inner,
+        .brand-mark,
+        .brand-image {
+            transition: height .35s ease, width .35s ease, transform .35s ease;
+        }
+
+        .site-header.is-scrolled .header-inner {
+            height: 3.75rem;
+        }
+
+        .site-header.is-scrolled .brand-mark {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        .site-header.is-scrolled .brand-image {
+            height: 2rem;
+        }
+
+        @supports (backdrop-filter: blur(12px)) {
+            .site-header.is-scrolled {
+                backdrop-filter: blur(12px);
+            }
+        }
+
+        .back-to-top {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(12px);
+            transition: opacity .3s ease, transform .3s ease, background-color .2s ease;
+        }
+
+        .back-to-top.is-visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
 <body class="wrapper">
 
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-8">
+    <header id="site-header" class="site-header relative sticky top-0 z-50 text-white">
+        <div class="header-inner mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-8">
                 <div class="flex items-center gap-3">
-                    <img src="/images/digix-tech-logo1.png" alt="Digix Tech" class="h-10 w-auto">
+                    <div class="brand-mark flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-400/40 bg-white p-1 shadow-md shadow-amber-500/10">
+                        <img src="/images/digix-tech-logo1.png" alt="Digix Tech" class="brand-image h-10 w-auto">
+                    </div>
                     <div class="flex flex-col">
-                        <a href="{{ route('home') }}" class="text-xl font-bold text-slate-900 tracking-tight">Digix<span
-                                class="text-amber-600">Tech</span></a>
-                        <a href="{{ route('home') }}" class="text-xs font-bold text-blue-900 tracking-tight">TI<span
-                                class="text-gray-600 ms-1">Solutions</span></a>
+                        <a href="{{ route('home') }}" class="text-xl font-bold tracking-tight text-white">Digix<span
+                                class="text-amber-400">Tech</span></a>
+                        <a href="{{ route('home') }}" class="text-xs font-bold tracking-tight text-slate-300">IT<span
+                                class="ms-1 text-amber-300">Solutions</span></a>
                     </div>
                 </div>
-                <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
-                    <a href="{{ route('home') }}" class="hover:text-amber-600 transition">หน้าแรก</a>
-                    <a href="{{ route('catalog') }}" class="hover:text-amber-600 transition">แคตตาล็อก</a>
-                    <a href="{{ route('services') }}" class="hover:text-amber-600 transition">บริการของเรา</a>
-                    <a href="{{ route('portfolio') }}" class="hover:text-amber-600 transition">ผลงาน</a>
-                    <a href="{{ route('about') }}" class="hover:text-amber-600 transition">เกี่ยวกับเรา</a>
-                    <a href="{{ route('contact') }}" class="hover:text-amber-600 transition">ติดต่อเรา</a>
+                <nav class="hidden items-center gap-1 rounded-2xl border border-slate-700/80 bg-slate-900/70 p-1 shadow-inner shadow-white/[0.03] md:flex text-sm font-medium text-slate-300">
+                    <a href="{{ route('home') }}" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('home') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">หน้าแรก</a>
+                    {{-- <a href="{{ route('catalog') }}" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('catalog') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">แคตตาล็อก</a> --}}
+                    <a href="{{ route('services') }}" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('services') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">บริการของเรา</a>
+                    <a href="{{ route('portfolio') }}" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('portfolio') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">ผลงาน</a>
+                    <a href="{{ route('about') }}" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('about') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">เกี่ยวกับเรา</a>
+                    <a href="{{ route('contact') }}" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('contact') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">ติดต่อเรา</a>
                 </nav>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center gap-3 sm:gap-4">
                 <button id="mobile-menu-button" aria-controls="mobile-nav" aria-expanded="false"
-                    class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    class="inline-flex items-center justify-center rounded-xl border border-slate-700 p-2 text-slate-200 transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 md:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <button
-                    class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">ใบเสนอราคา</button>
+                    class="inline-flex items-center gap-2 rounded-xl bg-amber-500 px-4 py-2.5 text-xs font-bold text-slate-950 shadow-md shadow-amber-500/20 transition hover:-translate-y-0.5 hover:bg-amber-400">ใบเสนอราคา <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></button>
             </div>
         </div>
-        <nav id="mobile-nav" class="hidden md:hidden bg-white border-t border-gray-200">
+        <nav id="mobile-nav" class="hidden border-t border-slate-700 bg-slate-900 md:hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-2">
-                <a href="{{ route('home') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">หน้าแรก</a>
-                <a href="{{ route('catalog') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">แคตตาล็อก</a>
-                <a href="{{ route('services') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">บริการของเรา</a>
-                <a href="{{ route('portfolio') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">ผลงาน</a>
-                <a href="{{ route('about') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">เกี่ยวกับเรา</a>
-                <a href="{{ route('contact') }}" class="block text-sm font-medium text-gray-700 hover:text-amber-600">ติดต่อเรา</a>
+                <a href="{{ route('home') }}" class="block rounded-xl px-3 py-2 text-sm font-medium {{ request()->routeIs('home') ? 'bg-amber-500 text-slate-950' : 'text-slate-200 hover:bg-slate-800 hover:text-amber-300' }}">หน้าแรก</a>
+                <a href="{{ route('catalog') }}" class="block rounded-xl px-3 py-2 text-sm font-medium {{ request()->routeIs('catalog') ? 'bg-amber-500 text-slate-950' : 'text-slate-200 hover:bg-slate-800 hover:text-amber-300' }}">แคตตาล็อก</a>
+                <a href="{{ route('services') }}" class="block rounded-xl px-3 py-2 text-sm font-medium {{ request()->routeIs('services') ? 'bg-amber-500 text-slate-950' : 'text-slate-200 hover:bg-slate-800 hover:text-amber-300' }}">บริการของเรา</a>
+                <a href="{{ route('portfolio') }}" class="block rounded-xl px-3 py-2 text-sm font-medium {{ request()->routeIs('portfolio') ? 'bg-amber-500 text-slate-950' : 'text-slate-200 hover:bg-slate-800 hover:text-amber-300' }}">ผลงาน</a>
+                <a href="{{ route('about') }}" class="block rounded-xl px-3 py-2 text-sm font-medium {{ request()->routeIs('about') ? 'bg-amber-500 text-slate-950' : 'text-slate-200 hover:bg-slate-800 hover:text-amber-300' }}">เกี่ยวกับเรา</a>
+                <a href="{{ route('contact') }}" class="block rounded-xl px-3 py-2 text-sm font-medium {{ request()->routeIs('contact') ? 'bg-amber-500 text-slate-950' : 'text-slate-200 hover:bg-slate-800 hover:text-amber-300' }}">ติดต่อเรา</a>
             </div>
         </nav>
     </header>
@@ -68,7 +122,7 @@
             <div>
                 <h3 class="text-white font-bold text-sm mb-3">Digix<span class="text-amber-600 ms-1">Tech</span></h3>
                 <p class="text-gray-500 leading-relaxed mb-4">
-                    ผู้นำเข้าและจัดจำหน่ายสินค้าอิเล็กทรอนิกส์ราคาส่งระดับมืออาชีพ มั่นใจด้วยระบบจัดการที่ทันสมัย</p>
+                    ผู้ให้บริการโซลูชันแบบครบวงจรที่ผสานจุดแข็งของเทคโนโลยี IT และการขนส่งสินค้าระหว่างประเทศเข้าด้วยกัน มุ่งเน้นการทำ Digital Transformation ให้กับคู่ค้าด้วยระบบ Software Management ที่ทันสมัย พร้อมระบบความปลอดภัยอัจฉริยะ และบริการ Shipping ข้ามพรมแดนที่มีประสิทธิภาพสูงสุดในภูมิภาค</p>
                 <div class="flex space-x-3 text-base">
                     <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#" class="hover:text-white"><i class="fa-brands fa-line"></i></a>
@@ -79,7 +133,7 @@
                 <h3 class="text-white font-bold mb-3">ผังไซต์</h3>
                 <ul class="space-y-2">
                     <li><a href="{{ route('home') }}" class="hover:text-white">หน้าแรก</a></li>
-                    <li><a href="{{ route('catalog') }}" class="hover:text-white">แคตตาล็อก</a></li>
+                    {{-- <li><a href="{{ route('catalog') }}" class="hover:text-white">แคตตาล็อก</a></li> --}}
                     <li><a href="{{ route('services') }}" class="hover:text-white">บริการของเรา</a></li>
                 </ul>
             </div>
@@ -97,7 +151,7 @@
                     148/7 ม.3 ถนนเสด็จ ต.มีชัย อ.เมือง จ.หนองคาย 43000<br>
                     <i class="fa-solid fa-phone mt-3 mr-2"></i> 02-123-4567<br>
                     <i class="fa-solid fa-envelope mr-2"></i> info@digixtechsolution.com<br>
-                    <i class="fa-solid fa-clock mr-2"></i> จันทร์-ศุกร์ 09:00-18:00 น.
+                    <i class="fa-solid fa-clock mr-2"></i> จันทร์-เสาร์ 09:00-17:00 น.
                 </p>
             </div>
         </div>
@@ -111,6 +165,11 @@
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" type="button" aria-label="เลื่อนกลับด้านบน" title="เลื่อนกลับด้านบน"
+        class="back-to-top fixed bottom-6 right-6 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/25 hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <div id="cookie-banner" class="hidden fixed inset-x-3 bottom-4 z-50 rounded-3xl border border-amber-400/50 bg-amber-500/95 p-4 shadow-[0_32px_80px_-40px_rgba(251,191,36,0.9)] text-slate-950 max-w-4xl mx-auto sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 sm:w-[calc(100%-2rem)] lg:w-[720px]">
         <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -190,6 +249,29 @@
             once: true,
             offset: 80,
         });
+
+        const siteHeader = document.getElementById('site-header');
+        if (siteHeader) {
+            const updateHeaderState = () => {
+                siteHeader.classList.toggle('is-scrolled', window.scrollY > 24);
+            };
+
+            updateHeaderState();
+            window.addEventListener('scroll', updateHeaderState, { passive: true });
+        }
+
+        const backToTop = document.getElementById('back-to-top');
+        if (backToTop) {
+            const updateBackToTopState = () => {
+                backToTop.classList.toggle('is-visible', window.scrollY > 320);
+            };
+
+            updateBackToTopState();
+            window.addEventListener('scroll', updateBackToTopState, { passive: true });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
 
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileNav = document.getElementById('mobile-nav');

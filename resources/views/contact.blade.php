@@ -34,7 +34,7 @@
                     <div class="flex items-center gap-4">
                         <i class="fa-solid fa-clock text-secondary-fixed text-lg"></i>
                         <p class="text-primary-fixed-dim">
-                            จันทร์ - ศุกร์: 09.00 - 18.00 น.
+                            จันทร์ - เสาร์: 09.00 - 17.00 น.
                         </p>
                     </div>
                 </div>

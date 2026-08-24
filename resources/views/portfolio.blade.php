@@ -1,247 +1,525 @@
 @extends('layout')
 @section('title', 'ผลงานของเรา')
 @section('content')
-    <section class="max-w-7xl mx-auto px-4 py-16">
-        <div class="text-center mb-16 space-y-4">
-            <h2 class="text-headline-lg text-on-surface">
-                ผลงานของเรา
-            </h2>
-            <p class="text-body-md text-on-surface-variant">
-                เราภูมิใจที่ได้เป็นส่วนหนึ่งในการสนับสนุนธุรกิจของลูกค้าด้วยสินค้าคุณภาพสูงและบริการที่เป็นเลิศ
-            </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- ระบบจัดการเครือข่ายองค์กรขนาดใหญ่ -->
-            <div data-aos="zoom-in" data-aos-delay="150" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600&h=400&fit=crop"
-                    alt="ระบบจัดการเครือข่ายองค์กรขนาดใหญ่" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-semibold mt-4">ระบบเครือข่าย</span>
-                <h3 class="text-headline-md font-bold mt-3">ระบบจัดการเครือข่ายองค์กรขนาดใหญ่</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">โปรเจกต์การติดตั้งโครงสร้าง SD-WAN ที่ลดต้นทุนการบำรุงรักษาลง 30% และเพิ่มประสิทธิภาพเครือข่าย 45%</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Finance Plus Group</p>
+    <div class="portfolio-page">
+        <section class="portfolio-hero">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=85&amp;w=2000"
+                alt="โครงการดิจิทัลทรานส์ฟอร์เมชันของ DigixTech">
+            <div class="portfolio-hero__overlay"></div>
+            <div class="portfolio-hero__content"><span>DigixTech Portfolio</span>
+                <h1>ผลงานที่เปลี่ยนระบบ<br><b>ให้เป็นโอกาสทางธุรกิจ</b></h1>
+                <p>รวมโซลูชัน Software, Logistics, Security และ Infrastructure ที่ออกแบบเพื่อการใช้งานจริง</p>
             </div>
+        </section>
 
-            <!-- ระบบผลิตอัจฉริยะ -->
-            <div data-aos="zoom-in" data-aos-delay="200" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&h=400&fit=crop"
-                    alt="ระบบผลิตอัจฉริยะ" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-semibold mt-4">IoT & AI</span>
-                <h3 class="text-headline-md font-bold mt-3">ระบบผลิตอัจฉริยะสำหรับโรงงาน</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">โซลูชัน Smart Factory ด้วย Machine Learning ลดเวลาหยุดเครื่อง 60% และเพิ่มผลผลิต 35%</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Industrial Tech Solutions</p>
+        <section class="portfolio-section">
+            <div class="portfolio-heading"><span>01 / Integrated Security</span>
+                <h2>ระบบความปลอดภัยและโครงสร้างพื้นฐาน</h2>
+                <p>เชื่อมต่อการควบคุมพื้นที่ การตรวจจับยานพาหนะ และการบริหารระบบไอทีไว้ในแพลตฟอร์มเดียว</p>
             </div>
-
-            <!-- แพลตฟอร์ม CRM -->
-            <div data-aos="zoom-in" data-aos-delay="250" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=600&h=400&fit=crop"
-                    alt="แพลตฟอร์ม CRM" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-semibold mt-4">ระบบบริหาร</span>
-                <h3 class="text-headline-md font-bold mt-3">แพลตฟอร์ม CRM ครบวงจร</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">ระบบ CRM ที่รองรับ 50+ สาขาและ 500+ ผู้ใช้ พร้อม Analytics และ Automation ขั้นสูง</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Service Excellence Corp</p>
+            <div class="portfolio-grid portfolio-grid--four">
+                <article class="portfolio-card">
+                    <div class="portfolio-card__visual"><img src="/images/services/barrier.svg" alt="Barrier System"></div>
+                    <div class="portfolio-card__body"><span>Access Control</span>
+                        <h3>Barrier</h3>
+                        <p>ระบบไม้กั้นอัตโนมัติ รองรับ RFID, Plate Recognition
+                            และการควบคุมการเข้าออกสำหรับพื้นที่พักอาศัยและธุรกิจ</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-card__visual"><img src="/images/services/alpr.svg" alt="ALPR System"></div>
+                    <div class="portfolio-card__body"><span>Vehicle Intelligence</span>
+                        <h3>ALPR Systems</h3>
+                        <p>อ่านป้ายทะเบียนอัตโนมัติ ติดตามรถแบบ Real-time และรองรับงานด่าน การจราจร และระบบ Toll</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-card__visual"><img src="/images/services/cctv.svg" alt="CCTV Surveillance"></div>
+                    <div class="portfolio-card__body"><span>Video Security</span>
+                        <h3>CCTV &amp; Surveillance</h3>
+                        <p>ระบบกล้องความคมชัดสูง Night Vision, Remote Monitoring และ Recording เพื่อความปลอดภัยรอบด้าน</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-card__visual"><img src="/images/services/infrastructure.svg"
+                            alt="IT Infrastructure"></div>
+                    <div class="portfolio-card__body"><span>Managed IT</span>
+                        <h3>IT Infrastructure</h3>
+                        <p>ออกแบบ Network, ดูแล Hardware และ Software Management ให้โครงสร้างไอทีพร้อมใช้งาน</p>
+                    </div>
+                </article>
             </div>
+        </section>
 
-            <!-- ระบบความปลอดภัยไซเบอร์ -->
-            <div data-aos="zoom-in" data-aos-delay="300" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=600&h=400&fit=crop"
-                    alt="ระบบความปลอดภัยไซเบอร์" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-error text-on-error px-3 py-1 rounded-full text-xs font-semibold mt-4">ความปลอดภัย</span>
-                <h3 class="text-headline-md font-bold mt-3">ระบบปลอดภัยไซเบอร์แบบครบวงจร</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">ระบบ 24/7 Threat Detection พร้อม AI สำหรับ Anomaly Detection ลดเวลาตรวจจับภัยคุกคาม 75%</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Cyber Defense International</p>
+        <section class="portfolio-section portfolio-section--dark">
+            <div class="portfolio-heading"><span>02 / Business Software</span>
+                <h2>ระบบซอฟต์แวร์สำหรับธุรกิจ</h2>
+                <p>เครื่องมือที่ช่วยให้ทีมทำงานเร็วขึ้น เห็นข้อมูลชัดขึ้น และบริหารจัดการได้จากทุกที่</p>
             </div>
-
-            <!-- การย้ายระบบไปยังคลาวด์ -->
-            <div data-aos="zoom-in" data-aos-delay="350" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&h=400&fit=crop"
-                    alt="การย้ายระบบไปยังคลาวด์" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-success text-on-success px-3 py-1 rounded-full text-xs font-semibold mt-4">คลาวด์</span>
-                <h3 class="text-headline-md font-bold mt-3">การย้ายระบบไปยังคลาวด์</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">โครงการย้ายแอปพลิเคชัน 100+ ไปยัง Multi-cloud ลดต้นทุน 50% และเพิ่ม Uptime เป็น 99.99%</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Enterprise Solutions Ltd</p>
+            <div class="portfolio-grid portfolio-grid--three">
+                <article class="software-card">
+                    <div class="software-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div><span>Management Platform</span>
+                        <h3>Smart ERP Connect Plus</h3>
+                        <p>ระบบบริหารจัดการองค์กรที่รวม Inventory, Accounting, Workflow และข้อมูลสำคัญไว้ในที่เดียว</p>
+                        <ul>
+                            <li>Dashboard และ Main Menu</li>
+                            <li>Inventory Management</li>
+                            <li>Accounting Module</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="software-card">
+                    <div class="software-card__icon"><i class="fa-solid fa-users"></i></div>
+                    <div><span>People Operations</span>
+                        <h3>HR-M System</h3>
+                        <p>ระบบบริหารทรัพยากรบุคคลสำหรับติดตามข้อมูลพนักงานและการทำงานอย่างเป็นระบบ</p>
+                        <ul>
+                            <li>Executive Dashboard</li>
+                            <li>Time Attendance</li>
+                            <li>Daily Timesheet และ Payslip</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="software-card">
+                    <div class="software-card__icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div><span>Smart Workforce</span>
+                        <h3>Smart Check IN-OUT</h3>
+                        <p>ลงเวลาเข้าออกด้วย Biometric และ GPS พร้อมระบบ Geofencing, Dynamic Workflow และจัดการกะงาน</p>
+                        <ul>
+                            <li>Biometric &amp; GPS Tracking</li>
+                            <li>Smart Geofencing</li>
+                            <li>Advanced Shift &amp; OT</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="software-card">
+                    <div class="software-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div><span>Transport Management</span>
+                        <h3>Smart TMS</h3>
+                        <p>แพลตฟอร์มบริหารจัดการขนส่งแบบครบวงจร พร้อมมองเห็นรถและสถานะงานแบบ Real-time</p>
+                        <ul>
+                            <li>Live GPS Tracking</li>
+                            <li>Maintenance</li>
+                            <li>Travel History &amp; Analytics</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="software-card">
+                    <div class="software-card__icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <div><span>Paperless Workflow</span>
+                        <h3>E-Docs</h3>
+                        <p>ระบบเอกสารดิจิทัลสำหรับ Dashboard, Meeting Booking, Document List และ E-Form</p>
+                        <ul>
+                            <li>จัดเก็บเอกสารกลาง</li>
+                            <li>Workflow และ Approval</li>
+                            <li>ค้นหาเอกสารได้รวดเร็ว</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="software-card">
+                    <div class="software-card__icon"><i class="fa-solid fa-cash-register"></i></div>
+                    <div><span>Retail Operations</span>
+                        <h3>Smart POS System</h3>
+                        <p>ระบบจุดขายและ Back Office สำหรับบริหารสินค้า ยอดขาย ใบเสร็จ และ Tax Invoice</p>
+                        <ul>
+                            <li>POS Terminal</li>
+                            <li>Sales Analytics</li>
+                            <li>Receipt &amp; Tax Invoice</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
+        </section>
 
-            <!-- ระบบ ERP บัญชีการเงิน -->
-            <div data-aos="zoom-in" data-aos-delay="400" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1551731423-8ac59e3f3ffa?q=80&w=600&h=400&fit=crop"
-                    alt="ระบบ ERP บัญชีการเงิน" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-semibold mt-4">ERP</span>
-                <h3 class="text-headline-md font-bold mt-3">ระบบบัญชีและการเงินแบบคลาวด์</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">ระบบ ERP ที่รองรับหลายสกุลเงินและภาษี ลดการประมวลผล Journal Entry ลง 70%</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Global Finance Group</p>
+        <section class="portfolio-section">
+            <div class="portfolio-heading"><span>03 / Logistics Ecosystem</span>
+                <h2>โซลูชันโลจิสติกส์และแพลตฟอร์มใหม่</h2>
+                <p>ออกแบบระบบให้เชื่อมผู้ให้บริการ ผู้ขับรถ ลูกค้า และพื้นที่ปฏิบัติการเข้าด้วยกัน</p>
             </div>
-
-            <!-- แอปพลิเคชันโทรศัพท์มือถือ HR -->
-            <div data-aos="zoom-in" data-aos-delay="450" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1512941691920-ab7fbf46eece?q=80&w=600&h=400&fit=crop"
-                    alt="แอปพลิเคชันจัดการพนักงาน" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-semibold mt-4">Mobile</span>
-                <h3 class="text-headline-md font-bold mt-3">แอป HR Mobile สำหรับพนักงาน</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">แอปพลิเคชัน iOS/Android สำหรับจัดการเวลาทำงาน GPS Tracking เพิ่มความพึงพอใจ 40%</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> HR Dynamics Solutions</p>
+            <div class="portfolio-grid portfolio-grid--four">
+                <article class="mini-project">
+                    <div class="mini-project__icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>KOKKEAK</h3>
+                    <p>แพลตฟอร์มรายงานและตรวจสอบงานซ่อมบำรุงภาคสนาม พร้อมติดตามสถานะได้ตลอดเวลา</p>
+                </article>
+                <article class="mini-project">
+                    <div class="mini-project__icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Logistic Pro</h3>
+                    <p>แพลตฟอร์ม On-demand เชื่อม Customer และ Driver พร้อมแผนที่ การชำระเงิน และ Real-time Tracking</p>
+                </article>
+                <article class="mini-project">
+                    <div class="mini-project__icon"><i class="fa-solid fa-square-parking"></i></div>
+                    <h3>Xpark</h3>
+                    <p>แพลตฟอร์มจองลานจอดรถสำหรับคนขับ เจ้าของลาน และบริษัทขนส่ง พร้อม Dashboard และการชำระเงิน</p>
+                </article>
+                <article class="mini-project">
+                    <div class="mini-project__icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Other Projects</h3>
+                    <p>Pre-Alert, Pre-Gate, WMS, Interlink, Container Tracking, Smart Chat, CIMS, Stock Cheque
+                        และระบบสนับสนุนงานด่าน</p>
+                </article>
             </div>
+        </section>
 
-            <!-- แพลตฟอร์มอีคอมเมิร์ซ -->
-            <div data-aos="zoom-in" data-aos-delay="500" class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                <img src="https://images.unsplash.com/photo-1523475335684-37898b6baf30?q=80&w=600&h=400&fit=crop"
-                    alt="แพลตฟอร์มอีคอมเมิร์ซ" class="w-full h-48 rounded-lg object-cover">
-                <span class="inline-block bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-semibold mt-4">Ecommerce</span>
-                <h3 class="text-headline-md font-bold mt-3">แพลตฟอร์มอีคอมเมิร์ซระดับเอนเตอร์ไพรส์</h3>
-                <p class="text-body-sm text-on-surface-variant mt-2">ระบบขายออนไลน์ 100,000+ สินค้า รองรับการซื้อขาย 10,000+ รายการต่อชั่วโมง</p>
-                <p class="text-xs text-on-surface mt-3"><strong>ลูกค้า:</strong> Digital Commerce Asia</p>
+        <section class="portfolio-section portfolio-section--cta">
+            <div class="portfolio-heading"><span>04 / Project Delivery</span>
+                <h2>จากไอเดียสู่ระบบที่ใช้งานได้จริง</h2>
+                <p>เราดูแลตั้งแต่สำรวจความต้องการ ออกแบบ พัฒนา ติดตั้ง ไปจนถึง Support หลังส่งมอบ</p>
             </div>
-        </div>
-
-        <!-- Details -->
-        <div id="portfolio-details" class="mt-16 space-y-12" hidden>
-            <article id="detail-network" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=900&h=600&fit=crop" alt="ระบบจัดการเครือข่าย" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">ระบบจัดการเครือข่ายองค์กรขนาดใหญ่</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">โปรเจกต์นี้รวมการออกแบบสถาปัตยกรรมเครือข่าย, ติดตั้ง SD-WAN, และปรับปรุงระบบรักษาความปลอดภัยเชิงโครงสร้าง ผลลัพธ์รวมถึงการเพิ่มThroughput 45% และลดค่าใช้จ่ายการบำรุงรักษา 30%.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Finance Plus Group</li>
-                            <li><strong>แล้วเสร็จ:</strong> สิงหาคม 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> Cisco, Fortinet, SD-WAN, Linux</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
+            <div class="delivery-steps">
+                <div><b>01</b>
+                    <h3>Discover</h3>
+                    <p>เข้าใจโจทย์และกระบวนการทำงาน</p>
                 </div>
-            </article>
-
-            <article id="detail-smartfactory" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&h=600&fit=crop" alt="ระบบผลิตอัจฉริยะ" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">ระบบผลิตอัจฉริยะสำหรับโรงงาน</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">ระบบ Smart Factory ที่รวม IoT และ Machine Learning เพื่อทำ Predictive Maintenance และปรับกระบวนการผลิตแบบเรียลไทม์ ช่วยลดเวลาหยุดเครื่อง 60% และเพิ่มผลผลิต 35%.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Industrial Tech Solutions</li>
-                            <li><strong>แล้วเสร็จ:</strong> มิถุนายน 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> Python, TensorFlow, MQTT, Kubernetes</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
+                <div><b>02</b>
+                    <h3>Design</h3>
+                    <p>ออกแบบโซลูชันและประสบการณ์ใช้งาน</p>
                 </div>
-            </article>
-
-            <article id="detail-crm" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=900&h=600&fit=crop" alt="แพลตฟอร์ม CRM" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">แพลตฟอร์ม CRM ครบวงจร</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">CRM ที่ผสานกับ ERP และระบบบัญชี, พร้อมฟีเจอร์ Customer Analytics และ Marketing Automation ช่วยให้การตัดสินใจเร็วขึ้นและลดค่าใช้จ่ายการดำเนินงาน.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Service Excellence Corp</li>
-                            <li><strong>แล้วเสร็จ:</strong> เมษายน 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> Laravel, Vue.js, MySQL, Redis, AWS</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
+                <div><b>03</b>
+                    <h3>Build</h3>
+                    <p>พัฒนา เชื่อมระบบ และทดสอบ</p>
                 </div>
-            </article>
-
-            <article id="detail-cyber" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=900&h=600&fit=crop" alt="ความปลอดภัยไซเบอร์" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">ระบบปลอดภัยไซเบอร์แบบครบวงจร</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">โซลูชัน Security Operations (SOC) พร้อมการตรวจจับ Anomaly แบบ AI, DDoS Protection และ Incident Response ที่ช่วยลดเวลาในการตอบสนองและได้มาตรฐาน ISO 27001.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Cyber Defense International</li>
-                            <li><strong>แล้วเสร็จ:</strong> พฤษภาคม 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> SIEM, Splunk, Elasticsearch, Python</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
+                <div><b>04</b>
+                    <h3>Support</h3>
+                    <p>ดูแลและพัฒนาต่อยอดอย่างต่อเนื่อง</p>
                 </div>
-            </article>
+            </div><a href="{{ route('contact') }}" class="portfolio-cta"><i class="fa-solid fa-comments"></i> คุยกับทีม
+                DigixTech</a>
+        </section>
+    </div>
+    <style>
+        .portfolio-page {
+            background: #f8fafc;
+            color: #172033;
+        }
 
-            <article id="detail-cloud" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=900&h=600&fit=crop" alt="การย้ายระบบไปยังคลาวด์" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">การย้ายระบบไปยังคลาวด์</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">ย้ายแอปพลิเคชัน 100+ ตัวไปยัง Multi-cloud พร้อมใช้ Auto-scaling, Load Balancer และ Infrastructure as Code เพื่อเพิ่มความทนทานและลดค่าใช้จ่าย.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Enterprise Solutions Ltd</li>
-                            <li><strong>แล้วเสร็จ:</strong> มีนาคม 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> AWS, Azure, Docker, Kubernetes, Terraform</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
-                </div>
-            </article>
+        .portfolio-hero {
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: #071b3b;
+        }
 
-            <article id="detail-erp" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1551731423-8ac59e3f3ffa?q=80&w=900&h=600&fit=crop" alt="ระบบ ERP" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">ระบบบัญชีและการเงินแบบคลาวด์</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">ระบบ ERP แบบคลาวด์ที่รองรับการบัญชีหลายสกุลเงิน, Automation สำหรับกระบวนการบัญชี และ BI Dashboard สำหรับการวิเคราะห์การเงินแบบเรียลไทม์.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Global Finance Group</li>
-                            <li><strong>แล้วเสร็จ:</strong> กุมภาพันธ์ 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> SAP, Oracle, React, PostgreSQL</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
-                </div>
-            </article>
+        .portfolio-hero>img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: .3;
+        }
 
-            <article id="detail-hr" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1512941691920-ab7fbf46eece?q=80&w=900&h=600&fit=crop" alt="แอป HR Mobile" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">แอป HR Mobile สำหรับพนักงาน</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">แอปมือถือสำหรับจัดการเวลาทำงาน, ตารางงาน และการขอลา พร้อม GPS verification และ Push Notifications.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> HR Dynamics Solutions</li>
-                            <li><strong>แล้วเสร็จ:</strong> มกราคม 2025</li>
-                            <li><strong>เทคโนโลยี:</strong> React Native, Firebase, Node.js</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
-                </div>
-            </article>
+        .portfolio-hero__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(110deg, #071b3b 12%, rgba(7, 27, 59, .84) 48%, rgba(168, 93, 42, .3));
+        }
 
-            <article id="detail-ecom" class="bg-surface p-8 rounded-2xl border border-outline">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <img src="https://images.unsplash.com/photo-1523475335684-37898b6baf30?q=80&w=900&h=600&fit=crop" alt="แพลตฟอร์มอีคอมเมิร์ซ" class="w-full rounded-lg lg:col-span-1 object-cover">
-                    <div class="lg:col-span-2">
-                        <h3 class="text-headline-lg font-bold">แพลตฟอร์มอีคอมเมิร์ซระดับเอนเตอร์ไพรส์</h3>
-                        <p class="text-body-md text-on-surface-variant mt-3">แพลตฟอร์มอีคอมเมิร์ซที่รองรับ 100,000+ รายการ, ระบบสั่งซื้อและชำระเงินที่ปลอดภัย และ Infrastructure ที่ปรับขนาดได้ตามการใช้งาน.</p>
-                        <ul class="mt-4 space-y-2 text-sm">
-                            <li><strong>ลูกค้า:</strong> Digital Commerce Asia</li>
-                            <li><strong>แล้วเสร็จ:</strong> ธันวาคม 2024</li>
-                            <li><strong>เทคโนโลยี:</strong> Magento, Laravel, Elasticsearch, AWS</li>
-                            <li><strong>สถานะ:</strong> Completed</li>
-                        </ul>
-                        <p class="mt-6"><a href="#" onclick="location.hash=''; return false;" class="text-primary font-semibold">กลับไปยังผลงาน</a></p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <script>
-            // Smooth scroll when clicking the anchor links
-            document.querySelectorAll('a[href^="#detail-"]').forEach(a => {
-                a.addEventListener('click', function(e){
-                    e.preventDefault();
-                    const id = this.getAttribute('href').substring(1);
-                    const el = document.getElementById(id);
-                    if(el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
-                    history.replaceState(null, '', '#'+id);
-                });
+        .portfolio-hero__content {
+            position: relative;
+            max-width: 72rem;
+            width: 100%;
+            margin: 0 auto;
+            padding: 5rem 1rem;
+            color: white;
+        }
+
+        .portfolio-hero__content span,
+        .portfolio-heading span {
+            color: #b87333;
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+        }
+
+        .portfolio-hero h1 {
+            margin-top: 1.25rem;
+            font-size: clamp(2.5rem, 6vw, 5.75rem);
+            line-height: 1.05;
+            font-weight: 900;
+        }
+
+        .portfolio-hero h1 b {
+            color: #f4b66c;
+        }
+
+        .portfolio-hero p {
+            max-width: 38rem;
+            margin-top: 1.5rem;
+            color: #dbeafe;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .portfolio-section {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 5rem 1rem;
+        }
+
+        .portfolio-section--dark {
+            max-width: none;
+            padding-right: max(1rem, calc((100% - 72rem) / 2));
+            padding-left: max(1rem, calc((100% - 72rem) / 2));
+            background: #0b1f42;
+            color: white;
+        }
+
+        .portfolio-section--cta {
+            text-align: center;
+        }
+
+        .portfolio-heading {
+            max-width: 48rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .portfolio-heading h2 {
+            margin-top: .65rem;
+            color: #172033;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        .portfolio-section--dark .portfolio-heading h2 {
+            color: white;
+        }
+
+        .portfolio-heading p {
+            margin-top: .85rem;
+            color: #64748b;
+            line-height: 1.75;
+        }
+
+        .portfolio-section--dark .portfolio-heading p {
+            color: #cbd5e1;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .portfolio-grid--four {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .portfolio-grid--three {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .portfolio-card,
+        .software-card,
+        .mini-project {
+            border-radius: 1.25rem;
+            overflow: hidden;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .portfolio-card:hover,
+        .software-card:hover,
+        .mini-project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 38px rgba(15, 23, 42, .18);
+        }
+
+        .portfolio-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+        }
+
+        .portfolio-card__visual {
+            display: grid;
+            height: 11rem;
+            place-items: center;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+            padding: 2.2rem;
+        }
+
+        .portfolio-card__visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .portfolio-card__body {
+            padding: 1.35rem;
+        }
+
+        .portfolio-card__body span,
+        .software-card span {
+            color: #b87333;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .portfolio-card h3,
+        .software-card h3,
+        .mini-project h3 {
+            margin-top: .5rem;
+            font-size: 1.25rem;
+            font-weight: 900;
+        }
+
+        .portfolio-card p,
+        .software-card p,
+        .mini-project p {
+            margin-top: .6rem;
+            color: #64748b;
+            font-size: .9rem;
+            line-height: 1.7;
+        }
+
+        .software-card {
+            display: flex;
+            gap: 1rem;
+            border: 1px solid rgba(148, 163, 184, .2);
+            background: linear-gradient(145deg, #162d55, #0d1c38);
+            padding: 1.35rem;
+        }
+
+        .software-card p,
+        .software-card li {
+            color: #cbd5e1;
+        }
+
+        .software-card__icon,
+        .mini-project__icon {
+            display: grid;
+            flex: 0 0 3rem;
+            width: 3rem;
+            height: 3rem;
+            place-items: center;
+            border-radius: .9rem;
+            background: #b87333;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .software-card h3 {
+            color: white;
+        }
+
+        .software-card ul {
+            margin-top: .8rem;
+            display: grid;
+            gap: .25rem;
+            font-size: .8rem;
+        }
+
+        .software-card li::before {
+            content: '✓';
+            margin-right: .4rem;
+            color: #f4b66c;
+        }
+
+        .mini-project {
+            border: 1px solid #e2e8f0;
+            background: white;
+            padding: 1.5rem;
+        }
+
+        .mini-project__icon {
+            background: #e8edf4;
+            color: #b87333;
+        }
+
+        .delivery-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2.5rem 0;
+            text-align: left;
+        }
+
+        .delivery-steps>div {
+            border-top: 3px solid #b87333;
+            background: white;
+            padding: 1.5rem;
+        }
+
+        .delivery-steps b {
+            color: #b87333;
+            font-size: .8rem;
+            letter-spacing: .15em;
+        }
+
+        .delivery-steps h3 {
+            margin-top: .75rem;
+            font-size: 1.25rem;
+            font-weight: 900;
+        }
+
+        .delivery-steps p {
+            margin-top: .4rem;
+            color: #64748b;
+            font-size: .9rem;
+        }
+
+        .portfolio-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: .65rem;
+            border-radius: .8rem;
+            background: #172033;
+            padding: .9rem 1.4rem;
+            color: white;
+            font-weight: 800;
+            transition: background .2s ease;
+        }
+
+        .portfolio-cta:hover {
+            background: #b87333;
+        }
+
+        @media (max-width: 900px) {
+            .portfolio-grid--four {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .portfolio-grid--three {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .delivery-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+
+            .portfolio-grid--four,
+            .portfolio-grid--three,
+            .delivery-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-hero {
+                min-height: 460px;
+            }
+
+            .software-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.portfolio-hero__content, .portfolio-heading, .portfolio-hero').forEach((element) => {
+                element.setAttribute('data-aos', 'fade-up');
             });
-        </script>
-    </section>
+
+            document.querySelectorAll('.portfolio-card, .software-card, .mini-project, .delivery-steps > div').forEach((card, index) => {
+                card.setAttribute('data-aos', card.classList.contains('software-card') ? 'zoom-in' : 'fade-up');
+                card.setAttribute('data-aos-delay', String((index % 4) * 120));
+            });
+        });
+    </script>
 @endsection
