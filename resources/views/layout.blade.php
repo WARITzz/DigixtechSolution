@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title')</title>
-    <link rel="icon" href="/images/digix-tech-logo1.png" type="image/png">
+    <link rel="icon" href="/images/DigixTech_logo.png" type="image/png">
     <script>
         window.__digixtechLang = (() => {
             try {
