@@ -6,126 +6,150 @@
             <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=85&amp;w=2000"
                 alt="โครงการดิจิทัลทรานส์ฟอร์เมชันของ DigixTech">
             <div class="portfolio-hero__overlay"></div>
-            <div class="portfolio-hero__content"><span>DigixTech Portfolio</span>
-                <h1>ผลงานที่เปลี่ยนระบบ<br><b>ให้เป็นโอกาสทางธุรกิจ</b></h1>
-                <p>รวมโซลูชัน Software, Logistics, Security และ Infrastructure ที่ออกแบบเพื่อการใช้งานจริง</p>
+            <div class="portfolio-hero__content">
+                <span data-i18n="port_hero_subtitle">DigixTech Portfolio</span>
+                <h1>
+                    <span data-i18n="port_hero_title_part1" class="port_hero_title">ผลงานที่เปลี่ยนระบบ</span><br>
+                    <b data-i18n="port_hero_title_highlight">ให้เป็นโอกาสทางธุรกิจ</b>
+                </h1>
+                <p data-i18n="port_hero_desc">รวมโซลูชัน Software, Logistics, Security และ Infrastructure ที่ออกแบบเพื่อการใช้งานจริง</p>
             </div>
         </section>
 
         <section class="portfolio-section">
-            <div class="portfolio-heading"><span>01 / Integrated Security</span>
-                <h2>ระบบความปลอดภัยและโครงสร้างพื้นฐาน</h2>
-                <p>เชื่อมต่อการควบคุมพื้นที่ การตรวจจับยานพาหนะ และการบริหารระบบไอทีไว้ในแพลตฟอร์มเดียว</p>
+            <div class="portfolio-heading">
+                <span data-i18n="sec_sec_num">01 / Integrated Security</span>
+                <h2 data-i18n="sec_sec_title">ระบบความปลอดภัยและโครงสร้างพื้นฐาน</h2>
+                <p data-i18n="sec_sec_desc">เชื่อมต่อการควบคุมพื้นที่ การตรวจจับยานพาหนะ และการบริหารระบบไอทีไว้ในแพลตฟอร์มเดียว</p>
             </div>
             <div class="portfolio-grid portfolio-grid--four">
+                <!-- Card 1 -->
                 <article class="portfolio-card">
                     <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Barrier.jpg" alt="Barrier System"></div>
-                    <div class="portfolio-card__body"><span>Access Control</span>
-                        <h3>Barrier</h3>
-                        <p>ระบบไม้กั้นอัตโนมัติ รองรับ RFID, Plate Recognition
-                            และการควบคุมการเข้าออกสำหรับพื้นที่พักอาศัยและธุรกิจ</p>
+                    <div class="portfolio-card__body">
+                        <span data-i18n="sec_card1_tag">Access Control</span>
+                        <h3 data-i18n="sec_card1_title">Barrier</h3>
+                        <p data-i18n="sec_card1_desc">ระบบไม้กั้นอัตโนมัติ รองรับ RFID, Plate Recognition และการควบคุมการเข้าออกสำหรับพื้นที่พักอาศัยและธุรกิจ</p>
                     </div>
                 </article>
+                <!-- Card 2 -->
                 <article class="portfolio-card">
                     <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Balpr.jpg" alt="ALPR System"></div>
-                    <div class="portfolio-card__body"><span>Vehicle Intelligence</span>
-                        <h3>ALPR Systems</h3>
-                        <p>อ่านป้ายทะเบียนอัตโนมัติ ติดตามรถแบบ Real-time และรองรับงานด่าน การจราจร และระบบ Toll</p>
+                    <div class="portfolio-card__body">
+                        <span data-i18n="sec_card2_tag">Vehicle Intelligence</span>
+                        <h3 data-i18n="sec_card2_title">ALPR Systems</h3>
+                        <p data-i18n="sec_card2_desc">อ่านป้ายทะเบียนอัตโนมัติ ติดตามรถแบบ Real-time และรองรับงานด่าน การจราจร และระบบ Toll</p>
                     </div>
                 </article>
+                <!-- Card 3 -->
                 <article class="portfolio-card">
                     <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Bcctv.jpg" alt="CCTV Surveillance"></div>
-                    <div class="portfolio-card__body"><span>Video Security</span>
-                        <h3>CCTV &amp; Surveillance</h3>
-                        <p>ระบบกล้องความคมชัดสูง Night Vision, Remote Monitoring และ Recording เพื่อความปลอดภัยรอบด้าน</p>
+                    <div class="portfolio-card__body">
+                        <span data-i18n="sec_card3_tag">Video Security</span>
+                        <h3 data-i18n="sec_card3_title">CCTV &amp; Surveillance</h3>
+                        <p data-i18n="sec_card3_desc">ระบบกล้องความคมชัดสูง Night Vision, Remote Monitoring และ Recording เพื่อความปลอดภัยรอบด้าน</p>
                     </div>
                 </article>
+                <!-- Card 4 -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Binfrastructure.jpg"
-                            alt="IT Infrastructure"></div>
-                    <div class="portfolio-card__body"><span>Managed IT</span>
-                        <h3>IT Infrastructure</h3>
-                        <p>ออกแบบ Network, ดูแล Hardware และ Software Management ให้โครงสร้างไอทีพร้อมใช้งาน</p>
+                    <div class="portfolio-card__visual"><img src="/images/portfolio/Image_Binfrastructure.jpg" alt="IT Infrastructure"></div>
+                    <div class="portfolio-card__body">
+                        <span data-i18n="sec_card4_tag">Managed IT</span>
+                        <h3 data-i18n="sec_card4_title">IT Infrastructure</h3>
+                        <p data-i18n="sec_card4_desc">ออกแบบ Network, ดูแล Hardware และ Software Management ให้โครงสร้างไอทีพร้อมใช้งาน</p>
                     </div>
                 </article>
             </div>
         </section>
 
         <section class="portfolio-section portfolio-section--dark">
-            <div class="portfolio-heading"><span>02 / Business Software</span>
-                <h2>ระบบซอฟต์แวร์สำหรับธุรกิจ</h2>
-                <p>เครื่องมือที่ช่วยให้ทีมทำงานเร็วขึ้น เห็นข้อมูลชัดขึ้น และบริหารจัดการได้จากทุกที่</p>
+            <div class="portfolio-heading">
+                <span data-i18n="soft_sec_num">02 / Business Software</span>
+                <h2 data-i18n="soft_sec_title">ระบบซอฟต์แวร์สำหรับธุรกิจ</h2>
+                <p data-i18n="soft_sec_desc">เครื่องมือที่ช่วยให้ทีมทำงานเร็วขึ้น เห็นข้อมูลชัดขึ้น และบริหารจัดการได้จากทุกที่</p>
             </div>
             <div class="portfolio-grid portfolio-grid--three">
+                <!-- Card 1 -->
                 <article class="software-card">
                     <div class="software-card__icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <div><span>Management Platform</span>
-                        <h3>Smart ERP Connect Plus</h3>
-                        <p>ระบบบริหารจัดการองค์กรที่รวม Inventory, Accounting, Workflow และข้อมูลสำคัญไว้ในที่เดียว</p>
+                    <div>
+                        <span data-i18n="soft_c1_tag">Management Platform</span>
+                        <h3 data-i18n="soft_c1_title">Smart ERP Connect Plus</h3>
+                        <p data-i18n="soft_c1_desc">ระบบบริหารจัดการองค์กรที่รวม Inventory, Accounting, Workflow และข้อมูลสำคัญไว้ในที่เดียว</p>
                         <ul>
-                            <li>Dashboard และ Main Menu</li>
-                            <li>Inventory Management</li>
-                            <li>Accounting Module</li>
+                            <li data-i18n="soft_c1_li1">Dashboard และ Main Menu</li>
+                            <li data-i18n="soft_c1_li2">Inventory Management</li>
+                            <li data-i18n="soft_c1_li3">Accounting Module</li>
                         </ul>
                     </div>
                 </article>
+                <!-- Card 2 -->
                 <article class="software-card">
                     <div class="software-card__icon"><i class="fa-solid fa-users"></i></div>
-                    <div><span>People Operations</span>
-                        <h3>HR-M System</h3>
-                        <p>ระบบบริหารทรัพยากรบุคคลสำหรับติดตามข้อมูลพนักงานและการทำงานอย่างเป็นระบบ</p>
+                    <div>
+                        <span data-i18n="soft_c2_tag">People Operations</span>
+                        <h3 data-i18n="soft_c2_title">HR-M System</h3>
+                        <p data-i18n="soft_c2_desc">ระบบบริหารทรัพยากรบุคคลสำหรับติดตามข้อมูลพนักงานและการทำงานอย่างเป็นระบบ</p>
                         <ul>
-                            <li>Executive Dashboard</li>
-                            <li>Time Attendance</li>
-                            <li>Daily Timesheet และ Payslip</li>
+                            <li data-i18n="soft_c2_li1">Executive Dashboard</li>
+                            <li data-i18n="soft_c2_li2">Time Attendance</li>
+                            <li data-i18n="soft_c2_li3">Daily Timesheet และ Payslip</li>
                         </ul>
                     </div>
                 </article>
+                <!-- Card 3 -->
                 <article class="software-card">
                     <div class="software-card__icon"><i class="fa-solid fa-calendar-check"></i></div>
-                    <div><span>Smart Workforce</span>
-                        <h3>Smart Check IN-OUT</h3>
-                        <p>ลงเวลาเข้าออกด้วย Biometric และ GPS พร้อมระบบ Geofencing, Dynamic Workflow และจัดการกะงาน</p>
+                    <div>
+                        <span data-i18n="soft_c3_tag">Smart Workforce</span>
+                        <h3 data-i18n="soft_c3_title">Smart Check IN-OUT</h3>
+                        <p data-i18n="soft_c3_desc">ลงเวลาเข้าออกด้วย Biometric และ GPS พร้อมระบบ Geofencing, Dynamic Workflow และจัดการกะงาน</p>
                         <ul>
-                            <li>Biometric &amp; GPS Tracking</li>
-                            <li>Smart Geofencing</li>
-                            <li>Advanced Shift &amp; OT</li>
+                            <li data-i18n="soft_c3_li1">Biometric &amp; GPS Tracking</li>
+                            <li data-i18n="soft_c3_li2">Smart Geofencing</li>
+                            <li data-i18n="soft_c3_li3">Advanced Shift &amp; OT</li>
                         </ul>
                     </div>
                 </article>
+                <!-- Card 4 -->
                 <article class="software-card">
                     <div class="software-card__icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div><span>Transport Management</span>
-                        <h3>Smart TMS</h3>
-                        <p>แพลตฟอร์มบริหารจัดการขนส่งแบบครบวงจร พร้อมมองเห็นรถและสถานะงานแบบ Real-time</p>
+                    <div>
+                        <span data-i18n="soft_c4_tag">Transport Management</span>
+                        <h3 data-i18n="soft_c4_title">Smart TMS</h3>
+                        <p data-i18n="soft_c4_desc">แพลตฟอร์มบริหารจัดการขนส่งแบบครบวงจร พร้อมมองเห็นรถและสถานะงานแบบ Real-time</p>
                         <ul>
-                            <li>Live GPS Tracking</li>
-                            <li>Maintenance</li>
-                            <li>Travel History &amp; Analytics</li>
+                            <li data-i18n="soft_c4_li1">Live GPS Tracking</li>
+                            <li data-i18n="soft_c4_li2">Maintenance</li>
+                            <li data-i18n="soft_c4_li3">Travel History &amp; Analytics</li>
                         </ul>
                     </div>
                 </article>
+                <!-- Card 5 -->
                 <article class="software-card">
                     <div class="software-card__icon"><i class="fa-solid fa-file-signature"></i></div>
-                    <div><span>Paperless Workflow</span>
-                        <h3>E-Docs</h3>
-                        <p>ระบบเอกสารดิจิทัลสำหรับ Dashboard, Meeting Booking, Document List และ E-Form</p>
+                    <div>
+                        <span data-i18n="soft_c5_tag">Paperless Workflow</span>
+                        <h3 data-i18n="soft_c5_title">E-Docs</h3>
+                        <p data-i18n="soft_c5_desc">ระบบเอกสารดิจิทัลสำหรับ Dashboard, Meeting Booking, Document List และ E-Form</p>
                         <ul>
-                            <li>จัดเก็บเอกสารกลาง</li>
-                            <li>Workflow และ Approval</li>
-                            <li>ค้นหาเอกสารได้รวดเร็ว</li>
+                            <li data-i18n="soft_c5_li1">จัดเก็บเอกสารกลาง</li>
+                            <li data-i18n="soft_c5_li2">Workflow และ Approval</li>
+                            <li data-i18n="soft_c5_li3">ค้นหาเอกสารได้รวดเร็ว</li>
                         </ul>
                     </div>
                 </article>
+                <!-- Card 6 -->
                 <article class="software-card">
                     <div class="software-card__icon"><i class="fa-solid fa-cash-register"></i></div>
-                    <div><span>Retail Operations</span>
-                        <h3>Smart POS System</h3>
-                        <p>ระบบจุดขายและ Back Office สำหรับบริหารสินค้า ยอดขาย ใบเสร็จ และ Tax Invoice</p>
+                    <div>
+                        <span data-i18n="soft_c6_tag">Retail Operations</span>
+                        <h3 data-i18n="soft_c6_title">Smart POS System</h3>
+                        <p data-i18n="soft_c6_desc">ระบบจุดขายและ Back Office สำหรับบริหารสินค้า ยอดขาย ใบเสร็จ และ Tax Invoice</p>
                         <ul>
-                            <li>POS Terminal</li>
-                            <li>Sales Analytics</li>
-                            <li>Receipt &amp; Tax Invoice</li>
+                            <li data-i18n="soft_c6_li1">POS Terminal</li>
+                            <li data-i18n="soft_c6_li2">Sales Analytics</li>
+                            <li data-i18n="soft_c6_li3">Receipt &amp; Tax Invoice</li>
                         </ul>
                     </div>
                 </article>
@@ -133,59 +157,75 @@
         </section>
 
         <section class="portfolio-section">
-            <div class="portfolio-heading"><span>03 / Logistics Ecosystem</span>
-                <h2>โซลูชันโลจิสติกส์และแพลตฟอร์มใหม่</h2>
-                <p>ออกแบบระบบให้เชื่อมผู้ให้บริการ ผู้ขับรถ ลูกค้า และพื้นที่ปฏิบัติการเข้าด้วยกัน</p>
+            <div class="portfolio-heading">
+                <span data-i18n="log_sec_num">03 / Logistics Ecosystem</span>
+                <h2 data-i18n="log_sec_title">โซลูชันโลจิสติกส์และแพลตฟอร์มใหม่</h2>
+                <p data-i18n="log_sec_desc">ออกแบบระบบให้เชื่อมผู้ให้บริการ ผู้ขับรถ ลูกค้า และพื้นที่ปฏิบัติการเข้าด้วยกัน</p>
             </div>
             <div class="portfolio-grid portfolio-grid--four">
+                <!-- Card 1 -->
                 <article class="mini-project">
                     <div class="mini-project__icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                    <h3>KOKKEAK</h3>
-                    <p>แพลตฟอร์มรายงานและตรวจสอบงานซ่อมบำรุงภาคสนาม พร้อมติดตามสถานะได้ตลอดเวลา</p>
+                    <h3 data-i18n="log_c1_title">KOKKEAK</h3>
+                    <p data-i18n="log_c1_desc">แพลตฟอร์มรายงานและตรวจสอบงานซ่อมบำรุงภาคสนาม พร้อมติดตามสถานะได้ตลอดเวลา</p>
                 </article>
+                <!-- Card 2 -->
                 <article class="mini-project">
                     <div class="mini-project__icon"><i class="fa-solid fa-truck-fast"></i></div>
-                    <h3>Logistic Pro</h3>
-                    <p>แพลตฟอร์ม On-demand เชื่อม Customer และ Driver พร้อมแผนที่ การชำระเงิน และ Real-time Tracking</p>
+                    <h3 data-i18n="log_c2_title">Logistic Pro</h3>
+                    <p data-i18n="log_c2_desc">แพลตฟอร์ม On-demand เชื่อม Customer และ Driver พร้อมแผนที่ การชำระเงิน และ Real-time Tracking</p>
                 </article>
+                <!-- Card 3 -->
                 <article class="mini-project">
                     <div class="mini-project__icon"><i class="fa-solid fa-square-parking"></i></div>
-                    <h3>Xpark</h3>
-                    <p>แพลตฟอร์มจองลานจอดรถสำหรับคนขับ เจ้าของลาน และบริษัทขนส่ง พร้อม Dashboard และการชำระเงิน</p>
+                    <h3 data-i18n="log_c3_title">Xpark</h3>
+                    <p data-i18n="log_c3_desc">แพลตฟอร์มจองลานจอดรถสำหรับคนขับ เจ้าของลาน และบริษัทขนส่ง พร้อม Dashboard และการชำระเงิน</p>
                 </article>
+                <!-- Card 4 -->
                 <article class="mini-project">
                     <div class="mini-project__icon"><i class="fa-solid fa-layer-group"></i></div>
-                    <h3>Other Projects</h3>
-                    <p>Pre-Alert, Pre-Gate, WMS, Interlink, Container Tracking, Smart Chat, CIMS, Stock Cheque
-                        และระบบสนับสนุนงานด่าน</p>
+                    <h3 data-i18n="log_c4_title">Other Projects</h3>
+                    <p data-i18n="log_c4_desc">Pre-Alert, Pre-Gate, WMS, Interlink, Container Tracking, Smart Chat, CIMS, Stock Cheque และระบบสนับสนุนงานด่าน</p>
                 </article>
             </div>
         </section>
 
         <section class="portfolio-section portfolio-section--cta">
-            <div class="portfolio-heading"><span>04 / Project Delivery</span>
-                <h2>จากไอเดียสู่ระบบที่ใช้งานได้จริง</h2>
-                <p>เราดูแลตั้งแต่สำรวจความต้องการ ออกแบบ พัฒนา ติดตั้ง ไปจนถึง Support หลังส่งมอบ</p>
+            <div class="portfolio-heading">
+                <span data-i18n="deliv_sec_num">04 / Project Delivery</span>
+                <h2 data-i18n="deliv_sec_title">จากไอเดียสู่ระบบที่ใช้งานได้จริง</h2>
+                <p data-i18n="deliv_sec_desc">เราดูแลตั้งแต่สำรวจความต้องการ ออกแบบ พัฒนา ติดตั้ง ไปจนถึง Support หลังส่งมอบ</p>
             </div>
             <div class="delivery-steps">
-                <div><b>01</b>
-                    <h3>Discover</h3>
-                    <p>เข้าใจโจทย์และกระบวนการทำงาน</p>
+                <!-- Step 01 -->
+                <div>
+                    <b>01</b>
+                    <h3 data-i18n="deliv_s1_title">Discover</h3>
+                    <p data-i18n="deliv_s1_desc">เข้าใจโจทย์และกระบวนการทำงาน</p>
                 </div>
-                <div><b>02</b>
-                    <h3>Design</h3>
-                    <p>ออกแบบโซลูชันและประสบการณ์ใช้งาน</p>
+                <!-- Step 02 -->
+                <div>
+                    <b>02</b>
+                    <h3 data-i18n="deliv_s2_title">Design</h3>
+                    <p data-i18n="deliv_s2_desc">ออกแบบโซลูชันและประสบการณ์ใช้งาน</p>
                 </div>
-                <div><b>03</b>
-                    <h3>Build</h3>
-                    <p>พัฒนา เชื่อมระบบ และทดสอบ</p>
+                <!-- Step 03 -->
+                <div>
+                    <b>03</b>
+                    <h3 data-i18n="deliv_s3_title">Build</h3>
+                    <p data-i18n="deliv_s3_desc">พัฒนา เชื่อมระบบ และทดสอบ</p>
                 </div>
-                <div><b>04</b>
-                    <h3>Support</h3>
-                    <p>ดูแลและพัฒนาต่อยอดอย่างต่อเนื่อง</p>
+                <!-- Step 04 -->
+                <div>
+                    <b>04</b>
+                    <h3 data-i18n="deliv_s4_title">Support</h3>
+                    <p data-i18n="deliv_s4_desc">ดูแลและพัฒนาต่อยอดอย่างต่อเนื่อง</p>
                 </div>
-            </div><a href="{{ route('contact') }}" class="portfolio-cta"><i class="fa-solid fa-comments"></i> คุยกับทีม
-                DigixTech</a>
+            </div>
+            <a href="{{ route('contact') }}" class="portfolio-cta">
+                <i class="fa-solid fa-comments"></i> 
+                <span data-i18n="deliv_cta_btn">คุยกับทีม DigixTech</span>
+            </a>
         </section>
     </div>
     <style>
@@ -226,7 +266,11 @@
             padding: 5rem 1rem;
             color: white;
         }
-
+        .portfolio-hero__content span.port_hero_title{
+            font-size: clamp(2.5rem, 6vw, 5.75rem);
+            letter-spacing: unset;
+            color: white !important;
+        }
         .portfolio-hero__content span,
         .portfolio-heading span {
             color: #b87333;
@@ -269,9 +313,9 @@
             color: white;
         }
 
-        .portfolio-section--cta {
+        /* .portfolio-section--cta {
             text-align: center;
-        }
+        } */
 
         .portfolio-heading {
             max-width: 48rem;

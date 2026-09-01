@@ -16,13 +16,13 @@
         </div>
         <div class="relative mx-auto max-w-6xl text-center z-10">
             <div data-aos="fade-down" class="mb-7">
-                <span
+                <span data-i18n="home_plan"
                     class="inline-flex items-center gap-2 rounded-full border border-amber-300/50 bg-amber-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.25em] text-amber-200">Business
                     Plan 2026</span>
             </div>
             <h1 data-aos="fade-up" class="text-5xl font-black tracking-tight text-white sm:text-8xl">DigixTech<span
                     class="text-amber-400">.</span></h1>
-            <p data-aos="fade-up" data-aos-delay="150"
+            <p data-i18n="home_tagline" data-aos="fade-up" data-aos-delay="150"
                 class="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-amber-100 sm:text-3xl">Connecting Borders,
                 Empowering Businesses with Integrated Digital &amp; Logistics Solutions</p>
             {{-- <div data-aos="zoom-in" data-aos-delay="300"
@@ -54,9 +54,9 @@
         </div>
     </header> --}}
     <section class="mx-auto grid max-w-6xl gap-10 px-4 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-        <div>
-            <p class="mb-3 text-sm font-bold uppercase tracking-widest text-sky-500">Executive Summary</p>
-            <h2 class="text-3xl font-black text-blue-700 sm:text-5xl">เติบโตด้วยระบบที่เชื่อมต่อกัน</h2>
+        {{-- <div>
+            <p data-i18n="home_exec_summary" class="mb-3 text-sm font-bold uppercase tracking-widest text-sky-500">Executive Summary</p>
+            <h2 data-i18n="home_grow_title" class="text-3xl font-black text-blue-700 sm:text-5xl">เติบโตด้วยระบบที่เชื่อมต่อกัน</h2>
             <ul class="mt-8 space-y-5 text-lg leading-relaxed text-slate-700">
                 <li class="flex gap-3"><span class="text-sky-500">●</span><span><strong>DigixTech</strong>
                         ผู้ให้บริการโซลูชันแบบครบวงจรที่ผสานจุดแข็งของเทคโนโลยี IT
@@ -65,6 +65,38 @@
                             Transformation</strong> ให้กับคู่ค้าด้วยระบบ Software Management ที่ทันสมัย</span></li>
                 <li class="flex gap-3"><span class="text-sky-500">●</span><span>ยกระดับความปลอดภัยด้วยระบบอัจฉริยะ และบริการ
                         <strong>Shipping ข้ามพรมแดน</strong> ที่มีประสิทธิภาพสูงสุดในภูมิภาค</span></li>
+            </ul>
+        </div> --}}
+        <div>
+            <p data-i18n="home_exec_summary" class="mb-3 text-sm font-bold uppercase tracking-widest text-sky-500">Executive Summary</p>
+            <h2 data-i18n="home_grow_title" class="text-3xl font-black text-blue-700 sm:text-5xl">เติบโตด้วยระบบที่เชื่อมต่อกัน</h2>
+            <ul class="mt-8 space-y-5 text-lg leading-relaxed text-slate-700">
+                <!-- ข้อความที่ 1 -->
+                <li class="flex gap-3">
+                    <span class="text-sky-500">●</span>
+                    <span>
+                        <strong data-i18n="home_feature_1_bold">DigixTech</strong>
+                        <span data-i18n="home_feature_1_suffix"> ผู้ให้บริการโซลูชันแบบครบวงจรที่ผสานจุดแข็ง...</span>
+                    </span>
+                </li>
+                <!-- ข้อความที่ 2 -->
+                <li class="flex gap-3">
+                    <span class="text-sky-500">●</span>
+                    <span>
+                        <span data-i18n="home_feature_2_prefix">ในปี 2026 มุ่งเน้นการทำ </span>
+                        <strong data-i18n="home_feature_2_bold">Digital Transformation</strong>
+                        <span data-i18n="home_feature_2_suffix"> ให้กับคู่ค้า...</span>
+                    </span>
+                </li>
+                <!-- ข้อความที่ 3 -->
+                <li class="flex gap-3">
+                    <span class="text-sky-500">●</span>
+                    <span>
+                        <span data-i18n="home_feature_3_prefix">ยกระดับความปลอดภัย... </span>
+                        <strong data-i18n="home_feature_3_bold">Shipping ข้ามพรมแดน</strong>
+                        <span data-i18n="home_feature_3_suffix"> ที่มีประสิทธิภาพ...</span>
+                    </span>
+                </li>
             </ul>
         </div>
         <div class="relative">
@@ -77,21 +109,21 @@
         <div class="mx-auto max-w-6xl">
             <div class="mb-10 text-center">
                 <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Vision &amp; Mission</p>
-                <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">วิสัยทัศน์และพันธกิจ</h2>
+                <h2 data-i18n="home_section_title" class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">วิสัยทัศน์และพันธกิจ</h2>            
             </div>
             <div class="grid gap-6 lg:grid-cols-2">
                 <div class="rounded-3xl bg-gradient-to-r from-sky-400 to-blue-500 p-8 text-white shadow-lg">
-                    <p class="text-2xl font-black">Vision (วิสัยทัศน์)</p>
-                    <p class="mt-5 text-xl font-semibold leading-relaxed">
+                    <p data-i18n="home_vision_title" class="text-2xl font-black">Vision (วิสัยทัศน์)</p>
+                    <p data-i18n="home_vision_text" class="mt-5 text-xl font-semibold leading-relaxed">
                         “เป็นผู้นำระดับภูมิภาคในการส่งมอบนวัตกรรมดิจิทัลและโลจิสติกส์แบบบูรณาการ
                         เพื่อการเติบโตที่ยั่งยืนของพันธมิตรทางธุรกิจ”</p>
                 </div>
                 <div class="rounded-3xl bg-blue-800 p-8 text-white shadow-lg">
-                    <p class="text-2xl font-black">Mission (พันธกิจ)</p>
+                    <p data-i18n="home_mission_title" class="text-2xl font-black">Mission (พันธกิจ)</p>
                     <ul class="mt-5 space-y-3 text-lg leading-relaxed">
-                        <li>• พัฒนา Software คุณภาพสูง (HRM, ERP, POS)</li>
-                        <li>• ให้บริการ Shipping ข้ามแดนที่รวดเร็วและตรวจสอบได้</li>
-                        <li>• ยกระดับความปลอดภัยด้วยระบบ CCTV AI อัจฉริยะ</li>
+                        <li data-i18n="home_mission1">• พัฒนา Software คุณภาพสูง (HRM, ERP, POS)</li>
+                        <li data-i18n="home_mission2">• ให้บริการ Shipping ข้ามแดนที่รวดเร็วและตรวจสอบได้</li>
+                        <li data-i18n="home_mission3">• ยกระดับความปลอดภัยด้วยระบบ CCTV AI อัจฉริยะ</li>
                     </ul>
                 </div>
             </div>
@@ -99,257 +131,126 @@
     </section>
     <section class="mx-auto max-w-6xl px-4 py-20">
         <div class="mb-10 text-center">
-            <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Software Portfolio</p>
-            <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">ระบบที่ขับเคลื่อนธุรกิจ</h2>
+            <p data-i18n="home_portfolio_subtitle" class="text-sm font-bold uppercase tracking-widest text-sky-500">Software Portfolio</p>
+            <h2 data-i18n="home_portfolio_title" class="mt-3 text-3xl font-black text-blue-700 sm:text-5xl">ระบบที่ขับเคลื่อนธุรกิจ</h2>
         </div>
         <div data-reveal-group class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="glow-card rounded-3xl bg-blue-800 p-7 text-white shadow-lg"><i
-                    class="fa-solid fa-users text-3xl text-sky-300"></i>
-                <h3 class="mt-5 text-2xl font-bold">HRM System</h3>
-                <p class="mt-3 leading-relaxed">บริหารจัดการบุคลากร ข้อมูลพนักงาน และเงินเดือน</p>
+            <div class="glow-card rounded-3xl bg-blue-800 p-7 text-white shadow-lg">
+                <i class="fa-solid fa-users text-3xl text-sky-300"></i>
+                <h3 data-i18n="home_portfolio_hr_title" class="mt-5 text-2xl font-bold">HRM System</h3>
+                <p data-i18n="home_portfolio_hr_desc" class="mt-3 leading-relaxed">บริหารจัดการบุคลากร ข้อมูลพนักงาน และเงินเดือน</p>
             </div>
-            <div class="glow-card rounded-3xl bg-sky-500 p-7 text-white shadow-lg"><i
-                    class="fa-solid fa-calendar-check text-3xl"></i>
-                <h3 class="mt-5 text-2xl font-bold">Smart Check-in</h3>
-                <p class="mt-3 leading-relaxed">ระบบลงทะเบียนและเข้างานอัตโนมัติด้วยเทคโนโลยีล้ำสมัย</p>
+            <div class="glow-card rounded-3xl bg-sky-500 p-7 text-white shadow-lg">
+                <i class="fa-solid fa-calendar-check text-3xl"></i>
+                <h3 data-i18n="home_portfolio_checkin_title" class="mt-5 text-2xl font-bold">Smart Check-in</h3>
+                <p data-i18n="home_portfolio_checkin_desc" class="mt-3 leading-relaxed">ระบบลงทะเบียนและเข้างานอัตโนมัติด้วยเทคโนโลยีล้ำสมัย</p>
             </div>
-            <div class="glow-card rounded-3xl bg-cyan-400 p-7 text-white shadow-lg"><i
-                    class="fa-solid fa-cash-register text-3xl"></i>
-                <h3 class="mt-5 text-2xl font-bold">POS System</h3>
-                <p class="mt-3 leading-relaxed">ระบบบริหารจัดการจุดขายและควบคุมสต็อกสินค้าอย่างแม่นยำ</p>
+            <div class="glow-card rounded-3xl bg-cyan-400 p-7 text-white shadow-lg">
+                <i class="fa-solid fa-cash-register text-3xl"></i>
+                <h3 data-i18n="home_portfolio_pos_title" class="mt-5 text-2xl font-bold">POS System</h3>
+                <p data-i18n="home_portfolio_pos_desc" class="mt-3 leading-relaxed">ระบบบริหารจัดการจุดขายและควบคุมสต็อกสินค้าอย่างแม่นยำ</p>
             </div>
-            <div class="glow-card rounded-3xl bg-sky-200 p-7 text-blue-900 shadow-lg"><i
-                    class="fa-solid fa-network-wired text-3xl"></i>
-                <h3 class="mt-5 text-2xl font-bold">ERP Solution</h3>
-                <p class="mt-3 leading-relaxed">เชื่อมโยงทุกแผนกธุรกิจให้เป็นหนึ่งเดียว บริหารทรัพยากรครบวงจร</p>
+            <div class="glow-card rounded-3xl bg-sky-200 p-7 text-blue-900 shadow-lg">
+                <i class="fa-solid fa-network-wired text-3xl"></i>
+                <h3 data-i18n="home_portfolio_erp_title" class="mt-5 text-2xl font-bold">ERP Solution</h3>
+                <p data-i18n="home_portfolio_erp_desc" class="mt-3 leading-relaxed">เชื่อมโยงทุกแผนกธุรกิจให้เป็นหนึ่งเดียว บริหารทรัพยากรครบวงจร</p>
             </div>
         </div>
     </section>
     <section class="bg-white px-4 py-16">
-        <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center"><img
-                src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&amp;w=900"
-                alt="ตู้คอนเทนเนอร์และการขนส่งสินค้า" class="h-80 w-full rounded-3xl object-cover shadow-lg">
-            <div>
-                <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Shipping &amp; Security</p>
-                <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">ส่งต่อความมั่นใจทุกเส้นทาง</h2>
-                <div class="mt-8 space-y-7">
-                    <div class="flex gap-5"><i class="fa-solid fa-ship mt-1 text-4xl text-blue-700"></i>
-                        <div>
-                            <h3 class="text-xl font-bold text-sky-500">Cross-Border Shipping</h3>
-                            <p class="mt-2 leading-relaxed text-slate-600">บริการขนส่งสินค้าข้ามพรมแดนแบบครบวงจร พร้อมระบบ
-                                Tracking อัจฉริยะ และการจัดการเอกสารศุลกากรแบบไร้รอยต่อ</p>
-                        </div>
+    <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
+        <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&amp;w=900"
+             alt="ตู้คอนเทนเนอร์และการขนส่งสินค้า" class="h-80 w-full rounded-3xl object-cover shadow-lg">
+        <div>
+            <p data-i18n="home_shipping_subtitle" class="text-sm font-bold uppercase tracking-widest text-sky-500">Shipping &amp; Security</p>
+            <h2 data-i18n="home_shipping_title" class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">ส่งต่อความมั่นใจทุกเส้นทาง</h2>
+            <div class="mt-8 space-y-7">
+                <div class="flex gap-5">
+                    <i class="fa-solid fa-ship mt-1 text-4xl text-blue-700"></i>
+                    <div>
+                        <h3 data-i18n="home_shipping_item1_title" class="text-xl font-bold text-sky-500">Cross-Border Shipping</h3>
+                        <p data-i18n="home_shipping_item1_desc" class="mt-2 leading-relaxed text-slate-600">บริการขนส่งสินค้าข้ามพรมแดนแบบครบวงจร พร้อมระบบ Tracking อัจฉริยะ และการจัดการเอกสารศุลกากรแบบไร้รอยต่อ</p>
                     </div>
-                    <div class="flex gap-5"><i class="fa-solid fa-shield-halved mt-1 text-4xl text-emerald-500"></i>
-                        <div>
-                            <h3 class="text-xl font-bold text-sky-500">CCTV &amp; Safety Systems</h3>
-                            <p class="mt-2 leading-relaxed text-slate-600">ติดตั้งระบบรักษาความปลอดภัยขั้นสูง ด้วยกล้อง CCTV
-                                คุณภาพระดับพรีเมียม และวิเคราะห์ข้อมูลอัจฉริยะผ่านเทคโนโลยี AI</p>
-                        </div>
+                </div>
+                <div class="flex gap-5">
+                    <i class="fa-solid fa-shield-halved mt-1 text-4xl text-emerald-500"></i>
+                    <div>
+                        <h3 data-i18n="home_shipping_item2_title" class="text-xl font-bold text-sky-500">CCTV &amp; Safety Systems</h3>
+                        <p data-i18n="home_shipping_item2_desc" class="mt-2 leading-relaxed text-slate-600">ติดตั้งระบบรักษาความปลอดภัยขั้นสูง ด้วยกล้อง CCTV คุณภาพระดับพรีเมียม และวิเคราะห์ข้อมูลอัจฉริยะผ่านเทคโนโลยี AI</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section class="mx-auto max-w-6xl px-4 py-16">
-        <div class="mb-10 text-center">
-            <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Strategic Pillars</p>
-            <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">สามเสาหลักสู่การเติบโต</h2>
+    <div class="mb-10 text-center">
+        <p data-i18n="home_pillars_subtitle" class="text-sm font-bold uppercase tracking-widest text-sky-500">Strategic Pillars</p>
+        <h2 data-i18n="home_pillars_title" class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">สามเสาหลักสู่การเติบโต</h2>
+    </div>
+    <div data-reveal-group class="grid gap-6 md:grid-cols-3">
+        <div class="glow-card rounded-3xl border-t-8 border-blue-700 bg-white p-7 shadow-md">
+            <i class="fa-solid fa-microchip text-3xl text-blue-600"></i>
+            <h3 data-i18n="home_pillars_item1_title" class="mt-5 text-xl font-bold">Tech Advancement</h3>
+            <p data-i18n="home_pillars_item1_desc" class="mt-3 text-slate-600">อัปเกรดซอฟต์แวร์ทุกตัวสู่ระบบ Cloud-Native อย่างเต็มรูปแบบ และรองรับการประมวลผลขั้นสูงด้วย AI</p>
         </div>
-        <div data-reveal-group class="grid gap-6 md:grid-cols-3">
-            <div class="glow-card rounded-3xl border-t-8 border-blue-700 bg-white p-7 shadow-md"><i
-                    class="fa-solid fa-microchip text-3xl text-blue-600"></i>
-                <h3 class="mt-5 text-xl font-bold">Tech Advancement</h3>
-                <p class="mt-3 text-slate-600">อัปเกรดซอฟต์แวร์ทุกตัวสู่ระบบ Cloud-Native อย่างเต็มรูปแบบ
-                    และรองรับการประมวลผลขั้นสูงด้วย AI</p>
-            </div>
-            <div class="glow-card rounded-3xl border-t-8 border-sky-500 bg-white p-7 shadow-md"><i
-                    class="fa-solid fa-handshake text-3xl text-sky-500"></i>
-                <h3 class="mt-5 text-xl font-bold">Partner Ecosystem</h3>
-                <p class="mt-3 text-slate-600">สร้างเครือข่ายพันธมิตร Shipping ในสปป.ลาว เมียนมา และกัมพูชา
-                    เพื่อขยายฐานการบริการสู่ระดับภูมิภาค</p>
-            </div>
-            <div class="glow-card rounded-3xl border-t-8 border-emerald-500 bg-white p-7 shadow-md"><i
-                    class="fa-solid fa-video text-3xl text-emerald-500"></i>
-                <h3 class="mt-5 text-xl font-bold">Security Excellence</h3>
-                <p class="mt-3 text-slate-600">ตั้งเป้าเป็นเบอร์หนึ่งด้านการให้บริการและติดตั้งระบบ Security
-                    ครบวงจรสำหรับนิคมอุตสาหกรรม</p>
-            </div>
+        <div class="glow-card rounded-3xl border-t-8 border-sky-500 bg-white p-7 shadow-md">
+            <i class="fa-solid fa-handshake text-3xl text-sky-500"></i>
+            <h3 data-i18n="home_pillars_item2_title" class="mt-5 text-xl font-bold">Partner Ecosystem</h3>
+            <p data-i18n="home_pillars_item2_desc" class="mt-3 text-slate-600">สร้างเครือข่ายพันธมิตร Shipping ในสปป.ลาว เมียนมา และกัมพูชา เพื่อขยายฐานการบริการสู่ระดับภูมิภาค</p>
         </div>
-    </section>
+        <div class="glow-card rounded-3xl border-t-8 border-emerald-500 bg-white p-7 shadow-md">
+            <i class="fa-solid fa-video text-3xl text-emerald-500"></i>
+            <h3 data-i18n="home_pillars_item3_title" class="mt-5 text-xl font-bold">Security Excellence</h3>
+            <p data-i18n="home_pillars_item3_desc" class="mt-3 text-slate-600">ตั้งเป้าเป็นเบอร์หนึ่งด้านการให้บริการและติดตั้งระบบ Security ครบวงจรสำหรับนิคมอุตสาหกรรม</p>
+        </div>
+    </div>
+</section>
     <section class="bg-gradient-to-br from-blue-900 to-sky-700 px-4 py-16 text-white">
-        <div class="mx-auto max-w-6xl">
-            <div class="mb-10 text-center">
-                <p class="text-sm font-bold uppercase tracking-widest text-sky-200">SWOT Analysis 2026</p>
-                <h2 class="mt-2 text-3xl font-black sm:text-5xl">มองรอบด้าน วางแผนอย่างมั่นใจ</h2>
+    <div class="mx-auto max-w-6xl">
+        <div class="mb-10 text-center">
+            <p data-i18n="home_swot_subtitle" class="text-sm font-bold uppercase tracking-widest text-sky-200">SWOT Analysis 2026</p>
+            <h2 data-i18n="home_swot_title" class="mt-2 text-3xl font-black sm:text-5xl">มองรอบด้าน วางแผนอย่างมั่นใจ</h2>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+            <div class="rounded-3xl bg-white/10 p-7">
+                <h3 data-i18n="home_swot_s_title" class="text-xl font-bold text-sky-200">Strengths</h3>
+                <p data-i18n="home_swot_s_desc" class="mt-5 leading-relaxed">มีบริการครบวงจรทั้งด้าน IT และ Logistics (One-Stop Service) ตอบโจทย์ทุกความต้องการของลูกค้า</p>
             </div>
-            <div class="grid gap-5 md:grid-cols-3">
-                <div class="rounded-3xl bg-white/10 p-7">
-                    <h3 class="text-xl font-bold text-sky-200">Strengths</h3>
-                    <p class="mt-5 leading-relaxed">มีบริการครบวงจรทั้งด้าน IT และ Logistics (One-Stop Service)
-                        ตอบโจทย์ทุกความต้องการของลูกค้า</p>
-                </div>
-                <div class="rounded-3xl bg-white/10 p-7">
-                    <h3 class="text-xl font-bold text-sky-200">Weaknesses</h3>
-                    <p class="mt-5 leading-relaxed">กลุ่มผลิตภัณฑ์มีความหลากหลายสูง
-                        ต้องใช้ทีมงานผู้เชี่ยวชาญเฉพาะด้านจำนวนมากในการดูแลและพัฒนา</p>
-                </div>
-                <div class="rounded-3xl bg-white/10 p-7">
-                    <h3 class="text-xl font-bold text-sky-200">Opportunities</h3>
-                    <p class="mt-5 leading-relaxed">การขยายตัวอย่างรวดเร็วของตลาด E-commerce
-                        และนโยบายการค้าเสรีภูมิภาคอาเซียน (AEC)</p>
-                </div>
+            <div class="rounded-3xl bg-white/10 p-7">
+                <h3 data-i18n="home_swot_w_title" class="text-xl font-bold text-sky-200">Weaknesses</h3>
+                <p data-i18n="home_swot_w_desc" class="mt-5 leading-relaxed">กลุ่มผลิตภัณฑ์มีความหลากหลายสูง ต้องใช้ทีมงานผู้เชี่ยวชาญเฉพาะด้านจำนวนมากในการดูแลและพัฒนา</p>
+            </div>
+            <div class="rounded-3xl bg-white/10 p-7">
+                <h3 data-i18n="home_swot_o_title" class="text-xl font-bold text-sky-200">Opportunities</h3>
+                <p data-i18n="home_swot_o_desc" class="mt-5 leading-relaxed">การขยายตัวอย่างรวดเร็วของตลาด E-commerce และนโยบายการค้าเสรีภูมิภาคอาเซียน (AEC)</p>
             </div>
         </div>
-    </section>
-    {{-- <section class="mx-auto max-w-6xl px-4 py-16">
-        <div class="mb-10">
-            <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Investment &amp; Growth</p>
-            <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">งบลงทุนและเป้าหมายรายได้</h2>
-        </div>
-        <div class="grid gap-8 lg:grid-cols-2">
-            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-md">
-                <h3 class="mb-5 text-xl font-bold text-blue-700">Budget Allocation 2026</h3>
-                <div class="overflow-x-auto">
-                    <table class="modern-table w-full text-left text-sm">
-                        <thead class="bg-blue-800 text-white">
-                            <tr>
-                                <th class="p-3">หมวดหมู่</th>
-                                <th class="p-3">ประเภท</th>
-                                <th class="p-3">Priority</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b">
-                                <td class="p-3">R&amp;D Software Development</td>
-                                <td class="p-3 font-bold text-indigo-600">CAPEX</td>
-                                <td class="p-3 font-bold text-red-600">High</td>
-                            </tr>
-                            <tr class="border-b bg-slate-50">
-                                <td class="p-3">Marketing &amp; Branding</td>
-                                <td class="p-3 font-bold text-orange-600">OPEX</td>
-                                <td class="p-3 font-bold text-orange-600">Medium</td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-3">Logistics Infrastructure</td>
-                                <td class="p-3 font-bold text-indigo-600">CAPEX</td>
-                                <td class="p-3 font-bold text-red-600">High</td>
-                            </tr>
-                            <tr class="bg-slate-50">
-                                <td class="p-3">Operations &amp; Salaries</td>
-                                <td class="p-3 font-bold text-orange-600">OPEX</td>
-                                <td class="p-3 font-bold text-red-600">High</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="glow-card rounded-3xl bg-gradient-to-br from-sky-100 to-blue-100 p-8 shadow-md">
-                <h3 class="text-xl font-bold text-blue-700">Revenue Forecast 2026 (THB)</h3>
-                <div class="mt-8 grid items-center gap-8 sm:grid-cols-[180px_1fr]">
-                    <div class="donut-chart" aria-label="Revenue forecast donut chart">
-                        <div class="donut-chart__label"><strong><span data-counter="280">0</span>M</strong><span>Total
-                                Target</span></div>
-                    </div>
-                    <div class="space-y-4 text-slate-700">
-                        <div class="flex items-center justify-between gap-4 border-b border-blue-200 pb-3"><span><i
-                                    class="mr-2 inline-block h-3 w-3 rounded-full bg-blue-600"></i>Shipping</span><strong>105M
-                                (37.5%)</strong></div>
-                        <div class="flex items-center justify-between gap-4 border-b border-blue-200 pb-3"><span><i
-                                    class="mr-2 inline-block h-3 w-3 rounded-full bg-emerald-500"></i>Software
-                                SaaS</span><strong>72M (25.7%)</strong></div>
-                        <div class="flex items-center justify-between gap-4 border-b border-blue-200 pb-3"><span><i
-                                    class="mr-2 inline-block h-3 w-3 rounded-full bg-orange-400"></i>CCTV &amp;
-                                Security</span><strong>58M (20.7%)</strong></div>
-                        <div class="flex items-center justify-between gap-4"><span><i
-                                    class="mr-2 inline-block h-3 w-3 rounded-full bg-violet-500"></i>IT
-                                Services</span><strong>45M (16.1%)</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    {{-- <section class="bg-white px-4 py-16">
-        <div class="mx-auto max-w-6xl">
-            <div class="mb-10 text-center">
-                <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Implementation Roadmap 2026</p>
-                <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">แผนการลงมือทำ</h2>
-            </div>
-            <div data-reveal-group class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                <div class="rounded-2xl border-t-4 border-blue-600 bg-slate-50 p-6">
-                    <div class="flex items-center justify-between">
-                        <p class="font-bold text-blue-600">Q1</p><span class="status-badge">In Progress</span>
-                    </div>
-                    <h3 class="mt-2 text-xl font-bold">Infrastructure</h3>
-                    <p class="mt-3 text-sm text-slate-600">อัปเกรดระบบ Server ให้ทันสมัย และเปิดตัว UI ดีไซน์ใหม่ของ
-                        Software ทั้งหมด</p>
-                </div>
-                <div class="rounded-2xl border-t-4 border-blue-600 bg-slate-50 p-6">
-                    <div class="flex items-center justify-between">
-                        <p class="font-bold text-blue-600">Q2</p><span class="status-badge">In Progress</span>
-                    </div>
-                    <h3 class="mt-2 text-xl font-bold">Expansion</h3>
-                    <p class="mt-3 text-sm text-slate-600">เปิดสาขาตัวแทนในต่างประเทศ พร้อมจัดแคมเปญกระตุ้นยอด Shipping
-                        ครบวงจร</p>
-                </div>
-                <div class="rounded-2xl border-t-4 border-blue-600 bg-slate-50 p-6">
-                    <div class="flex items-center justify-between">
-                        <p class="font-bold text-blue-600">Q3</p><span class="status-badge">In Progress</span>
-                    </div>
-                    <h3 class="mt-2 text-xl font-bold">Optimization</h3>
-                    <p class="mt-3 text-sm text-slate-600">นำระบบ AI เข้ามาใช้จริงในงาน Security
-                        และประมวลผลข้อมูลเส้นทางการขนส่ง</p>
-                </div>
-                <div class="rounded-2xl border-t-4 border-blue-600 bg-slate-50 p-6">
-                    <div class="flex items-center justify-between">
-                        <p class="font-bold text-blue-600">Q4</p><span class="status-badge">In Progress</span>
-                    </div>
-                    <h3 class="mt-2 text-xl font-bold">Market Leader</h3>
-                    <p class="mt-3 text-sm text-slate-600">ประเมินผลกำไรสุทธิ และเร่งขยายพอร์ตโฟลิโอเจาะกลุ่มตลาด
-                        Enterprise ขนาดใหญ่</p>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+    </div>
+</section>
+    
     <section class="mx-auto max-w-6xl px-4 py-16">
         <div class="mb-10 text-center">
-            <p class="text-sm font-bold uppercase tracking-widest text-sky-500">Organization Structure</p>
-            <h2 class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">โครงสร้างองค์กร</h2>
+            <p data-i18n="home_org_subtitle" class="text-sm font-bold uppercase tracking-widest text-sky-500">Organization Structure</p>
+            <h2 data-i18n="home_org_title" class="mt-2 text-3xl font-black text-blue-700 sm:text-5xl">โครงสร้างองค์กร</h2>
         </div>
         <div class="mx-auto max-w-xl rounded-3xl bg-blue-800 p-7 text-center text-white shadow-lg">
-            <h3 class="text-2xl font-bold">Board of Directors</h3>
-            <p class="mt-2 text-sky-200">CEO / Management</p>
+            <h3 data-i18n="home_org_board_title" class="text-2xl font-bold">Board of Directors</h3>
+            <p data-i18n="home_org_board_desc" class="mt-2 text-sky-200">CEO / Management</p>
         </div>
         <div class="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-2">
-            <div class="rounded-3xl border-t-8 border-blue-600 bg-white p-8 text-center shadow-md"><i
-                    class="fa-solid fa-laptop-code text-3xl text-blue-600"></i>
-                <h3 class="mt-4 text-2xl font-bold">IT &amp; Development</h3>
-                <p class="mt-3 text-slate-600">Software Engineers, UI/UX Designers, QA Team, Technical Support</p>
+            <div class="rounded-3xl border-t-8 border-blue-600 bg-white p-8 text-center shadow-md">
+                <i class="fa-solid fa-laptop-code text-3xl text-blue-600"></i>
+                <h3 data-i18n="home_org_it_title" class="mt-4 text-2xl font-bold">IT &amp; Development</h3>
+                <p data-i18n="home_org_it_desc" class="mt-3 text-slate-600">Software Engineers, UI/UX Designers, QA Team, Technical Support</p>
             </div>
-            <div class="rounded-3xl border-t-8 border-emerald-500 bg-white p-8 text-center shadow-md"><i
-                    class="fa-solid fa-truck text-3xl text-emerald-500"></i>
-                <h3 class="mt-4 text-2xl font-bold">Logistics &amp; Shipping</h3>
-                <p class="mt-3 text-slate-600">Supply Chain Managers, Custom Officers, Operations Team</p>
+            <div class="rounded-3xl border-t-8 border-emerald-500 bg-white p-8 text-center shadow-md">
+                <i class="fa-solid fa-truck text-3xl text-emerald-500"></i>
+                <h3 data-i18n="home_org_logistics_title" class="mt-4 text-2xl font-bold">Logistics &amp; Shipping</h3>
+                <p data-i18n="home_org_logistics_desc" class="mt-3 text-slate-600">Supply Chain Managers, Custom Officers, Operations Team</p>
             </div>
         </div>
     </section>
-    {{-- <section class="bg-gradient-to-br from-sky-100 to-blue-200 px-4 py-16">
-        <div class="mx-auto max-w-4xl text-center">
-            <h2 class="text-5xl font-black text-blue-700 sm:text-7xl">THANK YOU</h2>
-            <div
-                class="mt-8 rounded-full bg-gradient-to-r from-sky-400 to-blue-600 px-6 py-5 text-2xl font-semibold text-white shadow-lg sm:text-4xl">
-                DigixTech</div>
-            <div class="mt-12 text-left">
-                <h3 class="text-2xl font-bold text-blue-900">Contact Us</h3>
-                <div class="mt-4 grid gap-3 text-lg text-slate-700 sm:grid-cols-2">
-                    <p><i class="fa-solid fa-envelope mr-3 text-cyan-500"></i>info@soudaphone.com</p>
-                    <p><i class="fa-brands fa-facebook mr-3 text-cyan-500"></i>Soudaphone Technology</p>
-                    <p><i class="fa-solid fa-globe mr-3 text-cyan-500"></i>https://soudaphone.com</p>
-                    <p><i class="fa-solid fa-phone mr-3 text-cyan-500"></i>020 58515202</p>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <div class="hidden">
         <h2 class="text-center text-xl font-bold text-gray-900 mb-2">บริการโซลูชันไอทีครบวงจร สำหรับธุรกิจทุกขนาด</h2>
