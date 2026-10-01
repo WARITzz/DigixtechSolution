@@ -143,7 +143,7 @@
                 </div>
                 <nav class="hidden items-center gap-1 rounded-2xl border border-slate-700/80 bg-slate-900/70 p-1 shadow-inner shadow-white/[0.03] md:flex text-sm font-medium text-slate-300">
                     <a href="{{ route('home') }}" data-i18n="nav_home" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('home') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">หน้าแรก</a>
-                    {{-- <a href="{{ route('catalog') }}" data-i18n="nav_catalog" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('catalog') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">แคตตาล็อก</a> --}}
+                    <a href="{{ route('catalog') }}" data-i18n="nav_catalog" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('catalog') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">แคตตาล็อก</a>
                     <a href="{{ route('services') }}" data-i18n="nav_services" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('services') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">บริการของเรา</a>
                     <a href="{{ route('portfolio') }}" data-i18n="nav_portfolio" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('portfolio') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">ผลงาน</a>
                     <a href="{{ route('about') }}" data-i18n="nav_about" class="rounded-xl px-3 py-2 transition {{ request()->routeIs('about') ? 'bg-amber-500 text-slate-950 shadow-md' : 'hover:bg-slate-800 hover:text-amber-300' }}">เกี่ยวกับเรา</a>
